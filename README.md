@@ -19,6 +19,6 @@ Fill a brief description of this experiment here
 ### Contributors List
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
-:--.|:..|:.|:..|:..|:..|
-1 | . | . | . | . | .
+:--|:--|:--|:--|:--|:--|
+1 | Dr. Rajeev Kumar Chauhan | Faculty | Department of Electrical Engineering | Dayalbagh Educational Institute Agra | rkchauhan@dei.ac.in
 2 | . | . | . | . | .
