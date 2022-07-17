@@ -1,9 +1,9 @@
 ## Introduction
 
 
-<b>Discipline | <b>Electrical Engineering (Fill your discipline name here)
+<b>Discipline | <b>Electrical Engineering 
 :--|:--|
-<b> Lab | <b> Control Engineering Virtual Laboratory (Fill your lab name here)
+<b> Lab | <b> Control Engineering Virtual Laboratory (PCC-EE17)
 <b> Experiment|     <b> Experiment-1: To obtain (i.) Pole, zero, gain values from a given transfer function (ii.) Transfer function model from pole, zero, gain values
 (iii.) Pole, zero plot of a transfer function 
 
@@ -20,6 +20,6 @@ Fill a brief description of this experiment here
 ### Contributors List
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
-:--|:--|:--|:--|:--|:--|
+:--|:Dr. Rajeev Kumar chauhan|:Faculty|:Department of Electrical Engineering|:Dayalbagh Educational Institute, Agra|:rkchauhan@dei.ac.in|
 1 | . | . | . | . | .
 2 | . | . | . | . | .
