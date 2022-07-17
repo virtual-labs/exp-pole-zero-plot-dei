@@ -4,8 +4,7 @@
 <b>Discipline | <b>Electrical Engineering 
 :--|:--|
 <b> Lab | <b> Control Engineering Virtual Laboratory (PCC-EE17)
-<b> Experiment|     <b> Experiment-1: To obtain (i.) Pole, zero, gain values from a given transfer function (ii.) Transfer function model from pole, zero, gain values
-(iii.) Pole, zero plot of a transfer function 
+<b> Experiment|     <b> Experiment-1: To obtain (i.) Pole, zero, gain values from a given transfer function (ii.) Transfer function model from pole, zero, gain values(iii.) Pole, zero plot of a transfer function 
 
 ### About the Experiment 
 
