@@ -12,9 +12,9 @@ Fill a brief description of this experiment here
 
 <b>Name of Developer | <b> Fill the name of experiment owner here 
 :--|:--|
-<b> Institute | <b>  
-<b> Email id|     <b>  
-<b> Department |  
+<b> Institute | <b>  Dayalbagh Educational Institute Agra 
+<b> Email id|     <b>  rkchauhan@dei.ac.in 
+<b> Department |  Department of Electrical Engineering 
 
 ### Contributors List
 
