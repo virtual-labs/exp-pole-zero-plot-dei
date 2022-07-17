@@ -10,7 +10,7 @@
 
 Fill a brief description of this experiment here
 
-<b>Name of Developer | <b> Fill the name of experiment owner here 
+<b>Name of Developer | <b> Dr. Rajeev Kumar Chauhan 
 :--|:--|
 <b> Institute | <b>  Dayalbagh Educational Institute Agra 
 <b> Email id|     <b>  rkchauhan@dei.ac.in 
