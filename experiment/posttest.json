@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "What will be the zeroes,poles and gain of?",
+      "question": "1.	Determine the location of poles, Zeros of the transfer function?",
       "answers": {
         "a": "answer1",
         "b": "answer2",
