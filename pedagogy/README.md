@@ -8,7 +8,7 @@
 <b> Experiment-1 : To obtain (i.) Pole, zero, gain values from a given transfer function (ii.) Transfer function model from pole, zero, gain values, (iii.) Pole, zero plot of a transfer function <a name="top"></a> <br>
 </p>
 
-<b>Discipline | Fill your discipline name here <b> 
+<b>Discipline | Electrical Engineering <b> 
 :--|:--|
 <b> Lab | Control Engineering Virtual Laboratory (PCC-EE17)<b> 
 <b> Experiment| To obtain (i.) Pole, zero, gain values from a given transfer function (ii.) Transfer function model from pole, zero, gain values, (iii.) Pole, zero plot of a transfer function <b> 
