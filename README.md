@@ -4,7 +4,8 @@
 <b>Discipline | <b>Electrical Engineering (Fill your discipline name here)
 :--|:--|
 <b> Lab | <b> Control Engineering Virtual Laboratory (Fill your lab name here)
-<b> Experiment|     <b> Fill your experiment name and number here
+<b> Experiment|     <b> Experiment-1: To obtain (i.) Pole, zero, gain values from a given transfer function (ii.) Transfer function model from pole, zero, gain values
+(iii.) Pole, zero plot of a transfer function 
 
 ### About the Experiment 
 
