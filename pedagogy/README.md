@@ -5,7 +5,7 @@
 
 
 <br>
-<b> Experiment : Experiment-1: To obtain (i.) Pole, zero, gain values from a given transfer function (ii.) Transfer function model from pole, zero, gain values	 <a name="top"></a> <br>
+<b> Experiment :-1: To obtain (i.) Pole, zero, gain values from a given transfer function (ii.) Transfer function model from pole, zero, gain values	 <a name="top"></a> <br>
 </p>
 
 <b>Discipline | Fill your discipline name here <b> 
