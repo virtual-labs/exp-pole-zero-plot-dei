@@ -13,7 +13,6 @@ function changepage() {
 }
 
 function addval() {
-
     var a = document.getElementById("z1r").value;
     var b = document.getElementById("z1i").value;
     var c = document.getElementById("z2r").value;

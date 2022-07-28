@@ -325,30 +325,6 @@ body {
     cursor: not-allowed;
 }
 
-
-/*@media screen and (max-width: 500px){
-  #enter-val{
-width: 100%;
-height: 60vh;
-}
-.matlab-working
-{
-  height: 60vh;
-width: 100%;}
-.program{
-border-bottom-left-radius: 0px;
-border-top-right-radius:20px ;
-}
-}
-@media screen and (max-height: 800px)
-{
-#enter-val{
-height: 75vh;
-}
-.matlab-working{
-height: 79vh;}
-}*/
-
 .container {
     display: inline-block;
     cursor: pointer;

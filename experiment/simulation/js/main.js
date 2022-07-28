@@ -126,8 +126,7 @@ function addval() {
             } else if (dend == 0) {
                 x1 = (-1 * b2 - Math.sqrt(dend)) / 2 / a2;
                 x1 = Math.round(x1 * 100) / 100;
-                /*x1=x1.toFixed(2);
-                x1=parseInt(x1);*/
+
                 poles.push({ x: x1, y: 0 });
             } else {
                 x1 = (-1 * b2 / (2 * a2));
