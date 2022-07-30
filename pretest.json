@@ -1,0 +1,38 @@
+{
+    "version": 2.0,
+    "questions": [{
+            "question": "What will be the order of given transfer function : $${ \frac{5s + 4}{3s^2 + 1s + 1} }$$",
+            "answers": {
+                "a": "1",
+                "b": "2",
+                "c": "3",
+                "d": "5"
+            },
+            "explanations": {
+                "a": "Explanation 1  <a href='www.google.com'>here</a>",
+                "b": "Explanation 2",
+                "c": "Explanation 2",
+                "d": "Explanation 2"
+            },
+            "correctAnswer": "a",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "What will be the number of poles and zeroes of given transfer function : $${ \frac{5s + 4}{3s^2 + 1s + 1} }$$",
+            "answers": {
+                "a": "a.) 0,1",
+                "b": "b.) 2,0",
+                "c": "c.) 1,1",
+                "d": "d.) 2,1"
+            },
+            "explanations": {
+                "a": "Explanation 1  <a href='www.google.com'>here</a>",
+                "b": "Explanation 2",
+                "c": "Explanation 2",
+                "d": "Explanation 2"
+            },
+            "correctAnswer": "c",
+            "difficulty": "beginner"
+        }
+    ]
+}

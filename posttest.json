@@ -1,0 +1,38 @@
+{
+    "version": 2.0,
+    "questions": [{
+            "question": "What will be the zeroes,poles and gain of : $${ \frac{5s + 4}{3s^2 + 1s - 2} }$$",
+            "answers": {
+                "a": "a.) z = 0.8; p = -1,-0.67; k = 1.33",
+                "b": "b.)z = -0.8; p = -1,-0.67; k = 1.33",
+                "c": "c.) z = 0.8; p = -1,-0.67; k = 1.67",
+                "d": "d.) z = -0.8; p = -1,0.67; k = 1.67"
+            },
+            "explanations": {
+                "a": "Explanation 1  <a href='www.google.com'>here</a>",
+                "b": "Explanation 2",
+                "c": "Explanation 2",
+                "d": "Explanation 2"
+            },
+            "correctAnswer": "a",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "What will be the transfer function with: Zeroes = 1 + 2i, 1 - 2i; Poles = 3,2; Gain = 5",
+            "answers": {
+                "a": "a.) $${ \frac{5s^2 - 10s + 25}{1s^2 - 5s + 6} }$$",
+                "b": "b.)  $${ \frac{1s^2 - 5s + 6}{5s^2 - 10s + 25}}$$",
+                "c": "c.) $${ \frac{1s^2 + 5s + 6}{5s^2 - 10s + 25}}$$",
+                "d": "d.) $${ \frac{5s^2 + 10s + 25}{1s^2 + 5s + 6}}$$"
+            },
+            "explanations": {
+                "a": "Explanation 1  <a href='www.google.com'>here</a>",
+                "b": "Explanation 2",
+                "c": "Explanation 2",
+                "d": "Explanation 2"
+            },
+            "correctAnswer": "c",
+            "difficulty": "beginner"
+        }
+    ]
+}
