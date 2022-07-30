@@ -4,3 +4,7 @@ Poles are the value(s) for z where the denominator of the transfer function equa
 The general procedure to find the transfer function of a linear differential equation from input to output is to take the Laplace Transform of both sides assuming zero conditions, and to solve for the ratio of the output Laplace over the input Laplace. <br>
 The transfer function provides a basis for determining important system response characteristics without solving the complete differential equation. As defined, the transfer function is a rational function in the complex variable ‘s’ that is It is often convenient to factor the polynomials in the numerator and the denominator, and to write the transfer function in terms of those factors 
 $${G(s) = \frac{N(s)}{D(s)} = k\frac{(s-z_1 )(s-z_2 )... ... ...(s-z_n)}{(s-p_1 )(s-p_2 )... ... ...(s-p_m)} }$$
+Where, the numerator and denominator polynomials, N(s) and D(s).
+				The values of s for which N(s) =0, are known as zeros of the system. i.e; at: $${s = z_1, z_2……….. z_n}$$
+				The values of s for which D(s) =0, are known as poles of the system. i.e; at: $${s = p_1, p_2……….. p_m}$$
+				Obtain Pole, zero, gain values of any transfer functions and transfer function from pole,zero and gain and plot them. Also verify your result theoretically.
