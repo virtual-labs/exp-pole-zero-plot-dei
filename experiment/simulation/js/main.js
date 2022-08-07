@@ -187,11 +187,12 @@ if(b!=0)
 if(c!=0)
   if(a!=0 || b!=0)
 if(c>0)
-      numerator=numerator+" + " + c+"}";
+      numerator=numerator+" + " + c;
     else
-      numerator=numerator + c+"}";
+      numerator=numerator + c;
   else
-  numerator=numerator+ c+"}";
+  numerator=numerator+ c;
+numerator = numerator+"}";
 var denominator = "{";
 if(p!=0)
 denominator=denominator+p+"s^2";
@@ -205,7 +206,7 @@ if(q!=0)
     denominator=denominator+ q+"s";
 if(r!=0)
   if(p!=0||q!=0)
-if(q>0)
+if(r>0)
       denominator=denominator+ " + " + r;
     else
       denominator=denominator + r;
