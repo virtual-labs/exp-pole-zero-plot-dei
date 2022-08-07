@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Virtual Labs Dei-Linear Control Systems</title>
+	<link rel = "icon" href = 
+"https://www.vlab.co.in/images/logo.jpg" 
+        type = "image/x-icon">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+<body>
+
+	<header>
+	<select id="pagechanger">
+		<option value="2" selected>
+			To obtain Transfer function from Poles, Zeroes and Gain
+		</option>
+		<option value="1">
+			 To obtain Poles, Zeroes and Gain of Transfer Function
+		</option>
+	</select>
+	<a href="./index.html" id="sm1" style="display:none;"></a>
+	<a href="./index2.html" id="sm2" style="display: none;"></a>
+	<button id="input_button" onclick="changepage()">Select</button>
+</header>
+
+	<div id="simulation-cont">
+	<div id="enter-val">
+		<div id="input-statements">
+		<h3 class="mhead" style="color:cadetblue; text-align:center; margin:5px 0px">USER INPUTS</h3>	
+				<div class="numerator">
+
+					<h3>Location of Zeroes</h3>
+					<div class="val-input">
+						<h4>Z1:&emsp;&emsp;</h4>
+						<input type="number" name="real_val_zero" id="z1r" class="input-val" onchange="showval(5)">
+						<p>&emsp;+&emsp;</p>
+						<input type="number" name="imaginary_value_zero" id="z1i" class="input-val" onchange="showval(1)">
+						<p>&emsp;i</p> 
+					</div>
+					<div class="val-input">
+						<h4>Z2:&emsp;&emsp;</h4>
+						<input type="number" name="real_val_zero" id="z2r" class="input-val" onchange="showval(6)">
+						<p>&emsp;+&emsp;</p>
+						<input type="number" name="imaginary_value_zero" id="z2i" class="input-val" onchange="showval(2)">
+						<p>&emsp;i</p> 
+					</div>
+					
+				</div>
+				<div class="denominator">
+					<h3>Location of Zeroes</h3>
+					<div class="val-input">
+						<h4>P1:&emsp;&emsp;</h4>
+						<input type="number" name="real_val_pole" id="p1r" class="input-val" onchange="showval(7,value)">
+						<p>&emsp;+&emsp;</p>
+						<input type="number" name="imaginary_value_pole" id="p1i" class="input-val" onchange="showval(3)">
+						<p>&emsp;i</p> 
+					</div>
+					<div class="val-input">
+						<h4>P2:&emsp;&emsp;</h4>
+						<input type="number" name="real_val_pole" id="p2r" class="input-val" onchange="showval(8,value)">
+						<p>&emsp;+&emsp;</p>
+						<input type="number" name="imaginary_value_pole" id="p2i" class="input-val" onchange="showval(4)">
+						<p>&emsp;i</p> 
+					</div>
+				</div>
+				<div class="gain">
+					<h3>Enter Gain Value</h3>
+					<div class="val-input">
+						<h4>K:&emsp;</h4>
+						<input type="number" name="gain" id="gk" class="input-val">
+					</div>
+				</div>
+				
+				<button id="input_value" onclick="addval();">Submit</button>
+		</div>
+	</div>
+	<div class="matlab-working mat" id="matwork" title="Please enter the values of coeffecients of the equation first">
+		<div class="program" >
+			<h3 class="mhead">COMMAND WINDOW</h3>
+			<div class="prog-window">
+			<p class="mpara">You can run each command, line by line by pressing the run button and see the output of the particular line below it</p>
+			<code id="mat-code">
+				<span id="line1">Get coeffecients of numerator and denominator</span><br>
+				<span id="out1" class="genout"></span>
+				<span id="line2">Generate transfer function</span><br>
+				<span id="out2" class="genout"></span>
+				<span id="line3">Plot poles and zeroes</span><br>
+				<div class="mob-chart">
+				<div id="chartcont">
+					<canvas id="chartmine" style="width:100%;"></canvas>
+					</div>
+				</div>
+				<br>
+			</code>
+
+		</div>
+			<button id="mrun" class=" mrun mrundisabled" onclick="runprog(1);" disabled><p>Run |</p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="whitesmoke" class="bi bi-play" viewBox="0 0 16 16" style="position: relative;">
+  <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+</svg></p></button>
+		</div>
+	</div>
+	<div class="right-cont " id="right-c">
+		<div class="rightc-head">
+			<h3>Results</h3>
+		</div>
+		<div id="chartcont1">
+			<canvas id="myChart" style="width:100%;"></canvas>
+		</div>
+	</div>
+</div>
+<div class="conclusions">
+	<h1> Conclusions</h1>
+	<span id="fconclusions">Conclusions will show here</span>
+</div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+	<script type="text/javascript" src="./js/main1.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+</body>
+</html>
