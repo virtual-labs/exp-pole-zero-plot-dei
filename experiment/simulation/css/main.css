@@ -22,15 +22,14 @@ body {
 #enter-val {
     width: 30%;
     float: left;
-    height: 79.1vh;
+    height: 65vh;
 }
 
 #input-statements {
     width: 100%;
-    height: 60%;
+    height: 65vh;
     background-color: aliceblue;
     padding: 10px 0;
-    border-bottom: 1px solid cadetblue;
 }
 
 .numerator {
@@ -40,6 +39,12 @@ body {
     text-align: center;
 }
 
+.numerator h3 {
+    position: relative;
+    top: 5px;
+    font-size: 15px;
+}
+
 .val-input {
     height: auto;
     width: 100%;
@@ -47,12 +52,12 @@ body {
 
 .val-input h4 {
     display: inline-block;
-    margin: 5px 0px;
+    margin: 10px 0px;
 }
 
 .val-input p {
     display: inline-block;
-    margin: 5px 0px;
+    margin: 10px 0px;
 }
 
 .input-val {
@@ -65,6 +70,10 @@ body {
     height: auto;
     color: cadetblue;
     text-align: center;
+}
+
+.denominator h3 {
+    font-size: 15px;
 }
 
 .gain {
@@ -108,6 +117,7 @@ body {
     font-size: 20px;
     outline: none;
     position: relative;
+    left: 10%;
     top: 2.5vh;
 }
 
@@ -120,7 +130,7 @@ body {
     color: whitesmoke;
     height: 30px;
     width: 100px;
-    left: 5px;
+    left: 15%;
     border: none;
 }
 
@@ -173,7 +183,7 @@ body {
     width: 35%;
     display: inline-block;
     background-color: aliceblue;
-    height: 89vh;
+    height: 68vh;
 }
 
 .genout {
@@ -279,7 +289,7 @@ body {
 
 .right-cont {
     width: 35vw;
-    height: 89vh;
+    height: 68vh;
     background-color: aliceblue;
     float: right;
 }
@@ -325,46 +335,32 @@ body {
     cursor: not-allowed;
 }
 
+
+/*@media screen and (max-width: 500px){
+  #enter-val{
+width: 100%;
+height: 60vh;
+}
+.matlab-working
+{
+  height: 60vh;
+width: 100%;}
+.program{
+border-bottom-left-radius: 0px;
+border-top-right-radius:20px ;
+}
+}
+@media screen and (max-height: 800px)
+{
+#enter-val{
+height: 75vh;
+}
+.matlab-working{
+height: 79vh;}
+}*/
+
 .container {
     display: inline-block;
-    cursor: pointer;
-}
-
-.bar1,
-.bar2,
-.bar3 {
-    width: 30px;
-    height: 2.5px;
-    background-color: #333;
-    margin: 4px 0;
-    transition: 0.4s;
-}
-
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-4.5px, 4px);
-    transform: rotate(-45deg) translate(-5.5px, 4px);
-}
-
-.change .bar2 {
-    opacity: 0;
-}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-4px, -5px);
-    transform: rotate(45deg) translate(-5px, -5px);
-}
-
-.menu-btn {
-    position: relative;
-    height: 100%;
-    width: 70px;
-    float: left;
-    outline: none;
-    border: none;
-    background-color: white;
-}
-
-.menu-btn:hover {
     cursor: pointer;
 }
 
@@ -382,6 +378,25 @@ header {
     text-align: center;
     font-size: 20px;
     color: cadetblue;
+}
+
+.conclusions {
+    border-top: 4px solid dodgerblue;
+    height: 16vh;
+    background-color: aliceblue;
+}
+
+.conclusions h1 {
+    color: cadetblue;
+    position: relative;
+    background: none;
+    margin: 5px 0;
+}
+
+#fconclusions {
+    position: relative;
+    left: 2.5%;
+    color: dodgerblue;
 }
 
 @media screen and (max-width: 950px) {
@@ -415,16 +430,21 @@ header {
 @media screen and (max-width: 400px) {
     #pagechanger {
         top: 0.5vh;
+        left: 1px;
         font-size: 10px;
+    }
+    #input_button {
+        transform: scale(0.8);
+        display: block;
     }
 }
 
 @media screen and (min-height: 1000px) {
     #enter-val {
-        height: 52vh;
+        height: 62vh;
     }
     .prog-window {
-        height: 88%;
+        height: 100%;
     }
 }
 
@@ -453,7 +473,7 @@ header {
 @media screen and (max-width: 300px) {
     #pagechanger {
         top: 0.5vh;
-        font-size: 7px;
+        font-size: 10px;
     }
     @media screen and (max-height: 700px) {
         #enter-val {

@@ -1,4 +1,7 @@
 var mto = 0.5;
+var syss = 0;
+var sysms = 0;
+var sysus = 0;
 
 var eqn;
 var poles = [],
@@ -61,6 +64,9 @@ function addval() {
         document.getElementById("matwork").title = "";
         document.getElementById("mrun").disabled = false;
         document.getElementById("matwork").setAttribute("style", "opacity:1");
+        syss = 0;
+        sysms = 0;
+        sysus = 0;
         /*document.getElementById("mrun").setAttribute("style","background-color:dodgerblue");
         document.getElementById("mrun").style.color="whitesmoke";
         document.getElementById("mrun").style.cursor="pointer";*/
@@ -126,7 +132,8 @@ function addval() {
             } else if (dend == 0) {
                 x1 = (-1 * b2 - Math.sqrt(dend)) / 2 / a2;
                 x1 = Math.round(x1 * 100) / 100;
-
+                /*x1=x1.toFixed(2);
+                x1=parseInt(x1);*/
                 poles.push({ x: x1, y: 0 });
             } else {
                 x1 = (-1 * b2 / (2 * a2));
@@ -190,7 +197,7 @@ function addval() {
         denominator = denominator + "}}$$";
         eqn = numerator + denominator;
 
-        document.getElementById("generated_eqn").innerHTML = eqn;
+        //document.getElementById("generated_eqn").innerHTML = eqn;
 
         var output;
 
@@ -217,6 +224,7 @@ function addval() {
                 output = output + "&emsp;&emsp;   " + poles[j].x + "&emsp; + &emsp;" + poles[j].y + "&emsp; i" + "<br><br>";
             }
         }
+
         ni = 0;
         di = 0;
         var k;
@@ -278,6 +286,34 @@ function runprog(i) {
         document.getElementById("mrun").disabled = true;
         document.getElementById("mrun").classList.remove("mrunenabled");
         document.getElementById("mrun").classList.add("mrundisabled");
+        for (j = 0; j < poles.length; j++) {
+            if (poles[j].x < 0) {
+                syss = syss + 1;
+                document.getElementById("fconclusions").innerHTML = "STABLE: As all poles lie in left half of s-plane.";
+            } else if (poles[j].x == 0) {
+                sysms = sysms + 1;
+                document.getElementById("fconclusions").innerHTML = "MARGINALLY STABLE: Atleast one pole lie on imaginary axis.";
+            } else {
+                sysus = sysus + 1;
+
+            }
+        }
+        if (sysus > 0)
+            if (sysus == 1)
+                document.getElementById("fconclusions").innerHTML = "As one pole of the system lies in right half of the s-plane, therefore the system is Unstable";
+            else
+                document.getElementById("fconclusions").innerHTML = "As two poles of the system lies in right half of the s-plane, therefore the system is Unstable";
+        else if (sysms > 0)
+            if (sysms == 1)
+                document.getElementById("fconclusions").innerHTML = "As one pole of the system lies on the imaginary-axis, therefore the System is Marginally stable";
+            else
+                document.getElementById("fconclusions").innerHTML = "As two poles of the system lies on the imaginary-axis, therefore the System is Marginally stable";
+        else
+        if (syss == 1)
+            document.getElementById("fconclusions").innerHTML = "As one pole of the system lies in left half of the s-plane, therefore the System is Stable";
+        else
+            document.getElementById("fconclusions").innerHTML = "As two poles of the system lies in left half of the s-plane, therefore the System is Stable";
+
     }
 };
 

@@ -1,4 +1,7 @@
 var mto = 1;
+var syss = 0;
+var sysms = 0;
+var sysus = 0;
 
 var eqn;
 var poles = [],
@@ -13,6 +16,7 @@ function changepage() {
 }
 
 function addval() {
+
     var a = document.getElementById("z1r").value;
     var b = document.getElementById("z1i").value;
     var c = document.getElementById("z2r").value;
@@ -68,7 +72,7 @@ function addval() {
     document.getElementById("line1").setAttribute("style", "color:blue");
     document.getElementById("chartcont").setAttribute("style", "display:none");
     document.getElementById("chartcont1").setAttribute("style", "display:none;");
-    document.getElementById("generated_eqn").setAttribute("style", "display:none");
+    //document.getElementById("generated_eqn").setAttribute("style","display:none");
     for (let i = 1; i < 3; i++) {
         let out = "out" + i;
         let ln = "line" + (i + 1);
@@ -83,6 +87,9 @@ function addval() {
         mto = 0;
     }
     if (mto == 1) {
+        syss = 0;
+        sysms = 0;
+        sysus = 0;
         document.getElementById("matwork").title = "";
         document.getElementById("mrun").disabled = false;
         document.getElementById("matwork").setAttribute("style", "opacity:1");
@@ -159,8 +166,8 @@ function addval() {
         denominator = denominator + "}}$$";
         eqn = numerator + denominator;
         var values;
-        document.getElementById("generated_eqn").innerHTML = "Generated Equation=<br>" + eqn;
-        MathJax.Hub.Queue(["Typeset", MathJax.Hub, "generated_eqn"]);
+        //document.getElementById("generated_eqn").innerHTML="Generated Equation=<br>"+eqn;
+        //MathJax.Hub.Queue(["Typeset",MathJax.Hub,"generated_eqn"]);
         values = "$${Z_1 = &emsp;" + z1r.toFixed(2);
         if (z1i > 0)
             values = values + "+" + z1i.toFixed(2) + "i}$$$${Z_2 = &emsp;" + z2r.toFixed(2);
@@ -170,7 +177,7 @@ function addval() {
             values = values + "+" + z2i.toFixed(2) + "i}$$";
         else
             values = values + z2i.toFixed(2) + "i}$$";
-        document.getElementById("Zeroes").innerHTML = values;
+        //document.getElementById("Zeroes").innerHTML=values;
         MathJax.Hub.Queue(["Typeset", MathJax.Hub, "Zeroes"]);
         values = "$${P_1 = &emsp;" + p1r.toFixed(2);
         if (p1i > 0)
@@ -181,9 +188,9 @@ function addval() {
             values = values + "+" + p2i.toFixed(2) + "i}$$";
         else
             values = values + p2i.toFixed(2) + "i}$$";
-        document.getElementById("Poles").innerHTML = values;
+        //document.getElementById("Poles").innerHTML=values;
         MathJax.Hub.Queue(["Typeset", MathJax.Hub, "Poles"]);
-        document.getElementById("Gain").innerHTML = "$${K = &emsp;" + u + " }$$";
+        //document.getElementById("Gain").innerHTML="$${K = &emsp;" + u + " }$$";
         MathJax.Hub.Queue(["Typeset", MathJax.Hub, "Gain"]);
         var output;
         var linev;
@@ -202,7 +209,7 @@ function addval() {
         document.getElementById("mrun").disabled = true;
         document.getElementById("mrun").classList.remove('mrunenabled', 'mrundisabled');
         document.getElementById("mrun").classList.add('mrundisabled');
-        document.getElementById("generated_eqn").setAttribute("style", "display:none");
+        //document.getElementById("generated_eqn").setAttribute("style","display:none");
         document.getElementById("matwork").classList.add('mat');
         document.getElementById("Zeroes").innerHTML = "$${Z_1=}$$$${Z_2=}$$";
         document.getElementById("Poles").innerHTML = "$${P_1=}$$$${P_2=}$$";
@@ -277,6 +284,35 @@ function runprog(i) {
         document.getElementById("mrun").disabled = true;
         document.getElementById("mrun").classList.remove("mrunenabled");
         document.getElementById("mrun").classList.add("mrundisabled");
+        for (j = 0; j < poles.length; j++) {
+            if (poles[j].x < 0) {
+                syss = syss + 1;
+                document.getElementById("fconclusions").innerHTML = "STABLE: As all poles lie in left half of s-plane.";
+            } else if (poles[j].x == 0) {
+                sysms = sysms + 1;
+                document.getElementById("fconclusions").innerHTML = "MARGINALLY STABLE: Atleast one pole lie on imaginary axis.";
+            } else {
+                sysus = sysus + 1;
+
+            }
+        }
+        if (sysus > 0)
+            if (sysus == 1)
+                document.getElementById("fconclusions").innerHTML = "As one pole of the system lies in right half of the s-plane, therefore the system is Unstable";
+            else
+                document.getElementById("fconclusions").innerHTML = "As two poles of the system lies in right half of the s-plane, therefore the system is Unstable";
+        else if (sysms > 0)
+            if (sysms == 1)
+                document.getElementById("fconclusions").innerHTML = "As one pole of the system lies on the imaginary-axis, therefore the System is Marginally stable";
+            else
+                document.getElementById("fconclusions").innerHTML = "As two poles of the system lies on the imaginary-axis, therefore the System is Marginally stable";
+        else
+        if (syss == 1)
+            document.getElementById("fconclusions").innerHTML = "As one pole of the system lies in left half of the s-plane, therefore the System is Stable";
+        else
+            document.getElementById("fconclusions").innerHTML = "As two poles of the system lies in left half of the s-plane, therefore the System is Stable";
+
+
     }
 };
 
@@ -342,7 +378,7 @@ function widthcheck(ms) {
         document.getElementById("chartcont").setAttribute("style", "display:block;");
     else {
         document.getElementById("chartcont1").setAttribute("style", "display:block;");
-        document.getElementById("generated_eqn").setAttribute("style", "display:block;");
+        //    document.getElementById("generated_eqn").setAttribute("style","display:block;");
     }
 }
 
