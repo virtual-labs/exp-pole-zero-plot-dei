@@ -16,12 +16,12 @@ margin: 0;
 #enter-val{
 width: 30%;
 float: left;
-height: 65vh;
+height: 66.5vh;
 }
 
 #input-statements{
 width: 100%;
-height: 65vh;
+height: 66.5vh;
 background-color: aliceblue;
 padding: 10px 0;
 
@@ -155,7 +155,7 @@ border-radius: 20px;
 width: 35%;
 display: inline-block;
 background-color:aliceblue ;
-height: 68vh;
+height: 70vh;
 
 }
 .genout{
@@ -252,7 +252,7 @@ display: none;
 }
 .right-cont{
 width: 35vw;
-height: 68vh;
+height: 70vh;
 background-color: aliceblue;
 float: right;
 }
