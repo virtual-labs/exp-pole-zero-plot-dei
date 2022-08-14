@@ -3,7 +3,7 @@
 {
     "version": 2.0,
     "questions": [{
-            "question": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default\">{{html \"</sc\"+\"ript>\"}} What will be the order of given transfer function :$${ \\frac{5s + 4}{3s^2 + 1s + 1} }$$",
+            "question": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default\"> What will be the order of given transfer function :$${ \\frac{5s + 4}{3s^2 + 1s + 1} }$$",
             "answers": {
                 "a": "1",
                 "b": "2",
