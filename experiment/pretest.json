@@ -3,7 +3,7 @@
 {
     "version": 2.0,
     "questions": [{
-            "question": "What will be the order of given transfer function : $${G(s) = \\frac{N(s)}{D(s)} = k\\frac{(s-z_1 )(s-z_2 )... ... ...(s-z_n)}{(s-p_1 )(s-p_2 )... ... ...(s-p_m)} }$$",
+            "question": "What will be the order of given transfer function :<html><script async src=\"https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML\"></script><p> $${G(s) = \\frac{N(s)}{D(s)} = k\\frac{(s-z_1 )(s-z_2 )... ... ...(s-z_n)}{(s-p_1 )(s-p_2 )... ... ...(s-p_m)} }$$</p></html>",
             "answers": {
                 "a": "1",
                 "b": "2",
