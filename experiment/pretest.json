@@ -3,7 +3,7 @@
 {
     "version": 2.0,
     "questions": [{
-            "question": "What will be the order of given transfer function : sum_(i=1)^n i^3=((n(n+1))/2)^2",
+            "question": "What will be the order of given transfer function : $${G(s) = \frac{N(s)}{D(s)} = k\frac{(s-z_1 )(s-z_2 )... ... ...(s-z_n)}{(s-p_1 )(s-p_2 )... ... ...(s-p_m)} }$$",
             "answers": {
                 "a": "1",
                 "b": "2",
