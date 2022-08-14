@@ -22,7 +22,7 @@
                 "d": "z = -0.8; p = -1,0.67; k = 1.67"
             },
             "correctAnswer": "d",
-            "difficulty": "beginner"
+            "difficulty": "intermediate"
         },
         {
             "question": "What will be the transfer function with: Zeroes = 1 + 2i, 1 - 2i; Poles = 3,2; Gain = 5",
@@ -33,7 +33,7 @@
                 "d": "<img src=\"./images/posttesteq5.svg\">"
             },
             "correctAnswer": "a",
-            "difficulty": "beginner"
+            "difficulty": "intermediate"
         },
         {
             "question": "What will be the transfer function with: P<sub>1</sub> = -1.4142i ,P<sub>2</sub> = 1.4142i; Z<sub>1</sub> = -2.4495,Z<sub>2</sub> = 2.4495; k = 2",
@@ -44,7 +44,7 @@
                 "d": "<img src=\"./images/posttesteq12.svg\">"
             },
             "correctAnswer": "b",
-            "difficulty": "beginner"
+            "difficulty": "intermediate"
         },
         {
             "question": "The system will be stable if :",
