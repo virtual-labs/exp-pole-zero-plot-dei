@@ -9,12 +9,6 @@
                 "c": "c.) z = 0.8; p = -1,-0.67; k = 1.67",
                 "d": "d.) z = -0.8; p = -1,0.67; k = 1.67"
             },
-            "explanations": {
-                "a": "Explanation 1  <a href='www.google.com'>here</a>",
-                "b": "Explanation 2",
-                "c": "Explanation 2",
-                "d": "Explanation 2"
-            },
             "correctAnswer": "a",
             "difficulty": "beginner"
         },
@@ -26,13 +20,18 @@
                 "c": "c.) $${ \frac{1s^2 + 5s + 6}{5s^2 - 10s + 25}}$$",
                 "d": "d.) $${ \frac{5s^2 + 10s + 25}{1s^2 + 5s + 6}}$$"
             },
-            "explanations": {
-                "a": "Explanation 1  <a href='www.google.com'>here</a>",
-                "b": "Explanation 2",
-                "c": "Explanation 2",
-                "d": "Explanation 2"
-            },
             "correctAnswer": "c",
+            "difficulty": "beginner"
+        }
+        {
+            "question": "The system will be stable if :",
+            "answers": {
+                "a": "All Zeros lies in left half of s plane.",
+                "b": "All Poles lies in Left half of s plane.",
+                "c": "All Zeros lies in Right half of s plane.",
+                "d": "All Poles lies in Right half of s plane."
+            },
+            "correctAnswer": "b",
             "difficulty": "beginner"
         }
     ]
