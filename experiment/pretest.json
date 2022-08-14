@@ -3,7 +3,7 @@
 {
     "version": 2.0,
     "questions": [{
-            "question": "What will be the order of given transfer function :<math> <mfrac><mi> 5s+4 </mi><mi>3s<sup>2</sup>+1s+1</mi></mfrac></math> ",
+            "question": "What will be the order of given transfer function :<math> <mfrac bevelled=\"true\"><msup> 5s+4 </msup><msup>3s<sup>2</sup>+1s+1</msup></mfrac></math> ",
             "answers": {
                 "a": "1",
                 "b": "2",
