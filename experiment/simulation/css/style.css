@@ -4,9 +4,31 @@ margin: none;}
 header{
 height: 10vh;
 border-bottom:4px solid cadetblue ;}
-header h2{
+#pagechanger{
+border: none;
 color: cadetblue;
-display: inline-block;}
+font-size: 20px;
+outline: none;
+position: relative;
+left: 10%;
+top: 2.5vh;
+}
+#pagechanger:hover{
+cursor: pointer;}
+#input_button{
+  background-color: dodgerblue;
+  position: relative;
+  top: 2.5vh;
+  font-size: 18px;
+border-radius: 10px;
+color: whitesmoke;
+height:30px ;
+width: 100px;
+left: 15%;
+border: none;
+}
+#input_button:hover{
+cursor: pointer;}
 body{
 height: 100vh;
 width: 100vw;
@@ -16,12 +38,12 @@ margin: 0;
 #enter-val{
 width: 30%;
 float: left;
-height: 68vh;
+height: 71.5vh;
 }
 
 #input-statements{
 width: 100%;
-height: 68vh;
+height: 71.5vh;
 background-color: aliceblue;
 padding: 10px 0;
 
@@ -36,23 +58,17 @@ text-align: center;
 
   }
   .numerator h3{
-position: relative;
+    position: relative;
     top: 5px;
     font-size: 15px;
   }
-  .val-input{
-height: auto;
-width: 100%;
+  #input-statements p{
+    margin-top: 15px;
+    margin-bottom: 0;
   }
-  .val-input h4{
-    display: inline-block;
-    margin: 10px 0px;}
-  .val-input p{
-    display: inline-block;
-    margin: 10px 0px;}
-  .input-val{
-    display: inline-block;
-    width: 40px;}
+  #datalist option{
+    color: cadetblue;
+  }
   .denominator{
     width: 100%;
 height: auto;
@@ -62,15 +78,18 @@ text-align: center;
   .denominator h3{
     font-size: 15px;
   }
-  .gain{
-    width: 100%;
-height: auto;
-color:  cadetblue;
-text-align: center;
-  }
+.range-input{
+height: 12px;
+position: relative;
+top: 10px;
+width:70%;
+}
+.range-input:hover{
+cursor: pointer;
+}
 
 .displayed-eqn{
-height: 45%;
+height: 25%;
 width: 100%;
 background-color: aliceblue;
 color: cadetblue;
@@ -80,44 +99,14 @@ padding: 4px 0;
   padding: 0 20px;
   top: 10px;
   position: relative;
-  height: auto;
-}
-.display-eqn h4{
-margin: 2px 0;
-}
-.display-eqn .MathJax_Display{
-margin: 8px 0;
-}
-#generated_eqn{
-  color: darkcyan;
-  display: none;
+  height: 80%;
 }
 
-#pagechanger{
-border: none;
-color: cadetblue;
-font-size: 20px;
-outline: none;
-position: relative;
-left: 10%;
-top: 2.5vh;
+#generated_eqn{
+  color: darkcyan;
 }
-#input_button{
-  background-color: dodgerblue;
-  position: relative;
-  top: 2.5vh;
-  font-size: 18px;
-border-radius: 10px;
-color: whitesmoke;
-height:30px ;
-width: 100px;
-left: 15%;
-border: none;
-}
-#pagechanger:hover{
-cursor: pointer;}
-#input_button:hover{
-cursor: pointer;}
+
+
 #input_value{
 background-color: dodgerblue;
 position: relative;
@@ -155,7 +144,7 @@ border-radius: 20px;
 width: 35%;
 display: inline-block;
 background-color:aliceblue ;
-height: 72vh;
+height: 75vh;
 
 }
 .genout{
@@ -177,7 +166,7 @@ overflow-y: scroll;
 padding-bottom: 20px;}
 
 #enter-val h3{
-margin:  5px 0;
+margin:  2px 0;
 }
 .mhead{
 position: relative;
@@ -231,7 +220,7 @@ height: 100%;
 }
 #chartcont{
 width: 90%;
-height: 350px;
+height: 300px;
 padding: 10px;
 position: relative;
 border: 1px solid cadetblue;
@@ -242,7 +231,7 @@ display: none;
 }
 #chartcont1{
 width: 90%;
-height: 350px;
+height: 300px;
 padding: 10px;
 position: relative;
 border: 1px solid cadetblue;
@@ -252,7 +241,7 @@ display: none;
 }
 .right-cont{
 width: 35vw;
-height: 72vh;
+height: 75vh;
 background-color: aliceblue;
 float: right;
 }
@@ -330,10 +319,12 @@ text-align: center;
 font-size: 20px;
 color: cadetblue;
 }
+
 .conclusions{
   border-top: 4px solid dodgerblue;
-  height: 16vh;
+  height: 13.5vh;
 background-color: aliceblue;
+
 }
 .conclusions h1{
 color: cadetblue;
@@ -364,6 +355,7 @@ width: 200px;}
 #pagechanger{
 font-size: 12px;
 position: relative;
+
 }
 }
 @media screen and (min-height: 700px)
@@ -377,11 +369,10 @@ height: 62vh;}
 #pagechanger{
   top: 0.5vh;
   left: 1px;
-font-size: 10px;}
+font-size: 14px;}
 #input_button{
   transform: scale(0.8);
   display: block;}
-}
 }
 
 @media screen and (min-height: 1000px)
@@ -389,7 +380,7 @@ font-size: 10px;}
 #enter-val{
 height: 62vh;}
 .prog-window{
-height: 100%;}
+height: 80%;}
 }
 @media screen and (min-height: 1300px)
 {
@@ -436,7 +427,7 @@ height: 80vh;}
 @media screen and (max-height: 750px)
 {
 #enter-val{
-height: 80vh;}
+height: 62vh;}
 }
 }
 

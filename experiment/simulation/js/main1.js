@@ -1,4 +1,4 @@
-var mto=0.5;
+var mto=1;
 var syss=0;
 var sysms=0;
 var sysus=0;
@@ -13,259 +13,212 @@ function changepage() {
     document.getElementById("sm2").click();
 }
 function addval(){
-var nums,dens;
-var a= document.getElementById("numa").value;
-var b= document.getElementById("numb").value;
-var c= document.getElementById("numc").value;
-var p= document.getElementById("dena").value;
-var q= document.getElementById("denb").value;
-var r= document.getElementById("denc").value;
+
+var a= document.getElementById("z1r").value;
+var b= document.getElementById("z1i").value;
+var c= document.getElementById("z2r").value;
+var p= document.getElementById("z2i").value;
+var q= document.getElementById("p1r").value;
+var r= document.getElementById("p1i").value;
+var s= document.getElementById("p2r").value;
+var t= document.getElementById("p2i").value;
+var u= document.getElementById("gk").value;
 roots=[];
 poles=[];
 var x1,y1;
 var ni=0,di=0;
-a1=parseInt(a);
-b1=parseInt(b);
-c1=parseInt(c);
-a2=parseInt(p);
-b2=parseInt(q);
-c2=parseInt(r);
+if(a=="")
+var z1r=0;
+else
+var z1r=parseFloat(a);
+if(b=="")
+var z1i=0;
+else
+var z1i=parseFloat(b);
+if(c=="")
+var z2r=0;
+else
+var z2r=parseFloat(c);
+if(p=="")
+var z2i=0;
+else
+var z2i=parseFloat(p);
+if(q=="")
+  var p1r=0;
+else
+var p1r=parseFloat(q);
+if(r=="")
+var p1i=0;
+else
+var p1i=parseFloat(r);
+if(s=="")
+  var p2r=0;
+else
+var p2r=parseFloat(s);
+if(t=="")
+var p2i=0;
+else
+var p2i=parseFloat(t);
+if(u=="")
+var gk=0;
+else
+var gk=parseFloat(u);
+var a1,b1,c1,a2,b2,c2;
 lc = 1;
 document.getElementById("line1").setAttribute("style","color:blue");
 document.getElementById("chartcont").setAttribute("style","display:none");
 document.getElementById("chartcont1").setAttribute("style","display:none;");
-for(let i=1;i<5;i++)
+//document.getElementById("generated_eqn").setAttribute("style","display:none");
+for(let i=1;i<3;i++)
 {
  let out = "out" + i;
  let ln = "line" + (i+1);
  document.getElementById(ln).setAttribute("Style","color:black");
  document.getElementById(out).setAttribute("style","display:none");
 }
-if(a1==0 && a2!=0 && b1!=0 && c1!=0)
-mto=1;
-else if(a1!=0 && a2==0)
+if(p1r==0 && p1i==0 && p2r==0 && p2i==0)
 {
+  alert("Poles cannot be zero, improper transfer function");
   mto=0;
-  alert("Not a proper transfer function \nthe order of denominator should be greater than order of numerator");
 }
-else if(c1!=0 && (b2!=0 || a2!=0))
-{mto=1;}
-else if(a2==0 && b2==0)
-{mto=0;
-  alert("Not a proper transfer function \ndenominator cannot be a constant ");
+else if(gk==0)
+{
+alert("gain cannot be zero");
+mto=0;
 }
-else if(a1==0 && b1==0 && c1==0)
-{mto=0;
-  alert("Not a proper transfer function \nplease provide some value for numerator as numerator cannot be zero");}
-else if(a2==0 && b2==0 && c2==0)
-{mto=0;
-  alert("Not a proper transfer function \nplease provide some value for denominator as denominator cannot be zero  ");
-}
-
-if(mto){
-  document.getElementById("matwork").title="";
-document.getElementById("mrun").disabled = false;
-document.getElementById("matwork").setAttribute("style","opacity:1");
-syss = 0;
+if(mto==1)
+{
+  syss = 0;
 sysms=0;
 sysus=0;
-/*document.getElementById("mrun").setAttribute("style","background-color:dodgerblue");
-document.getElementById("mrun").style.color="whitesmoke";
-document.getElementById("mrun").style.cursor="pointer";*/
+ document.getElementById("matwork").title="";
+document.getElementById("mrun").disabled = false;
+document.getElementById("matwork").setAttribute("style","opacity:1");
 document.getElementById("mrun").classList.remove("mrundisabled","mrunenabled");
 document.getElementById("mrun").classList.add("mrunenabled");
 document.getElementById("matwork").classList.remove('mat');
-if(a1!=0){
-nums=a1;
-numd=discriminant(a1,b1,c1);
-if(numd>0)
-{
-  x1 = (-1*b1-Math.sqrt(numd))/2/a1;
-
-  x1 =Math.round(x1 * 100) / 100;
-  //x1=x1.toFixed(2);
-  //x1=parseInt(x1);
-  roots.push({x:x1,y:0});
-  x1 = (-1*b1+Math.sqrt(numd))/2/a1;
-  x1 =Math.round(x1 * 100) / 100;
-  /*x1=x1.toFixed(2);
-  x1=parseInt(x1);*/
-  roots.push({x:x1,y:0});
-}
-else if(numd==0)
-{
-  x1 = (-1*b1-Math.sqrt(numd))/2/a1;
-  x1 =Math.round(x1 * 100) / 100;
-  /*x1=x1.toFixed(2);
-  x1=parseInt(x1);*/
-  roots.push({x:x1,y:0});
-}
+if(z1r!=0 || z1i!=0 || z2r!=0 || z2i!=0)
+a1 = gk;
 else
-{
-  x1 = (-1*b1/(2*a1));
-  x1 =Math.round(x1 * 100) / 100;
-  /*x1=x1.toFixed(2);
-  x1=parseInt(x1);*/
-  y1 = (Math.sqrt(-1*numd)/2/a1)
-  y1 =Math.round(y1 * 100) / 100;
- /* y1=y1.toFixed(2);
-  y1=parseInt(y1);*/
-  roots.push({x:x1,y:y1});
-  roots.push({x:x1,y:-1*y1});
-  ni=1;
-}}
+a1=0;
+b1 = -1*gk*(z1r+z2r);
+if((z1r*z2r-z1i*z2i)!=0)
+c1 = gk*(z1r*z2r-z1i*z2i);
 else
-{
-  if(b1!=0)
-  {
-    nums=b1;
-    let temp = -1*c1/b1;
-    roots.push({x:temp,y:0});
-  }
-  else
-    nums=c1;
-}
-if(a2!=0){
-  dens=a2;
-dend=discriminant(a2,b2,c2);
-if(dend>0)
-{
-  x1 = (-1*b2-Math.sqrt(dend))/2/a2;
-  x1 =Math.round(x1 * 100) / 100;
-  /*x1=x1.toFixed(2);
-  x1=parseInt(x1);*/
-  poles.push({x:x1,y:0});
-  x1 = (-1*b2+Math.sqrt(dend))/2/a2;
-  x1 =Math.round(x1 * 100) / 100;
- /* x1=x1.toFixed(2);
-  x1=parseInt(x1);*/
-  poles.push({x:x1,y:0});
-}
-else if(dend==0)
-{
-  x1 = (-1*b2-Math.sqrt(dend))/2/a2;
-  x1 =Math.round(x1 * 100) / 100;
-  /*x1=x1.toFixed(2);
-  x1=parseInt(x1);*/
-  poles.push({x:x1,y:0});
-}
+c1=gk;
+if(p1r!=0 || p1i!=0 || p2r!=0 || p2i!=0)
+a2 = 1;
 else
-{
-  x1 = (-1*b2/(2*a2));
-  x1 =Math.round(x1 * 100) / 100;
- /* x1=x1.toFixed(2);
-  x1=parseInt(x1);*/
-  y1 = (Math.sqrt(-1*dend)/2/a2);
-  y1 =Math.round(y1 * 100) / 100;
- /* y1=y1.toFixed(2);
-  y1=parseInt(y1);*/
-  poles.push({x:x1,y:y1});
-  poles.push({x:x1,y:-1*y1});
-  di=1;
-}}
-else
-{
-  if(b2!=0){
-    dens=b2;
-    let temp = -1*c2/b2;
-    poles.push({x:temp,y:0});
-  }
-  else
-    dens=c2;
-}
+a2=0;
+b2 =-1*(p1r+p2r);
+c2 = (p1r*p2r-p1i*p2i);
+num1=a1.toFixed(2);
+num2=b1.toFixed(2);
+num3=c1.toFixed(2);
+den1=a2.toFixed(2);
+den2=b2.toFixed(2);
+den3=c2.toFixed(2);
+if(a!="" || b!="")
+roots.push({x:z1r,y:z1i});
+if(c!="" || p!="")
+roots.push({x:z2r,y:z2i});
+if(q!="" || r!="")
+poles.push({x:p1r,y:p1i});
+if(s!="" || t!="")
+poles.push({x:p2r,y:p2i});
 var numerator = "$${\\frac{";
-if(a!=0)
-numerator=numerator+a+"s^2";
-if(b!=0)
-  if(a!=0)
-    if(b>0)
-      numerator=numerator+" + " + b+"s";
+if(num1!=0)
+numerator=numerator+num1+"s^2";
+if(num2!=0)
+  if(num1!=0)
+    if(num2>0)
+      numerator=numerator+" + " + num2+"s";
     else
-      numerator=numerator + b+"s";
+      numerator=numerator+ num2+"s";
   else
-  numerator=numerator+ b+"s";
-if(c!=0)
-  if(a!=0 || b!=0)
-if(c>0)
-      numerator=numerator+" + " + c;
+ numerator=numerator+ num2+"s";
+if(num3!=0)
+  if(num1!=0 || num2!=0)
+    if(num3>0)
+      numerator=numerator+" + " + num3+"}";
     else
-      numerator=numerator + c;
+      numerator=numerator+ num3+"}";
   else
-  numerator=numerator+ c;
-numerator = numerator+"}";
+  numerator=numerator +num3+"}";
 var denominator = "{";
-if(p!=0)
-denominator=denominator+p+"s^2";
-if(q!=0)
-  if(p!=0)
-    if(q>0)
-      denominator=denominator+ " + " + q+"s";
+if(den1!=0)
+denominator=denominator+den1+"s^2";
+if(den2!=0)
+  if(den1!=0)
+    if(den2>0)
+      denominator=denominator+ " + " + den2+"s";
     else
-      denominator=denominator + q+"s";
-  else
-    denominator=denominator+ q+"s";
-if(r!=0)
-  if(p!=0||q!=0)
-if(r>0)
-      denominator=denominator+ " + " + r;
-    else
-      denominator=denominator + r;
+      denominator=denominator+ den2+"s";
 else
-  denominator=denominator+ r;
+denominator=denominator+ den2+"s";
+if(den3!=0)
+  if(den1!=0 || den2!==0)
+    if(den3>0)
+      denominator=denominator+ " + " + den3;
+    else
+      denominator=denominator+ den3;
+else
+denominator=denominator+ den3;
 denominator=denominator+"}}$$";
 eqn = numerator + denominator;
-
-//document.getElementById("generated_eqn").innerHTML = eqn;
-
+var values;
+//document.getElementById("generated_eqn").innerHTML="Generated Equation=<br>"+eqn;
+//MathJax.Hub.Queue(["Typeset",MathJax.Hub,"generated_eqn"]);
+values="$${Z_1 = &emsp;" + z1r.toFixed(2);
+if(z1i>0)
+  values= values+ "+" +z1i.toFixed(2) + "i}$$$${Z_2 = &emsp;" + z2r.toFixed(2);
+else
+  values= values  +z1i.toFixed(2) + "i}$$$${Z_2 = &emsp;" + z2r.toFixed(2);
+if(z2i>0)
+  values= values+"+" + z2i.toFixed(2)+"i}$$";
+else
+  values= values + z2i.toFixed(2)+"i}$$";
+//document.getElementById("Zeroes").innerHTML=values;
+MathJax.Hub.Queue(["Typeset",MathJax.Hub,"Zeroes"]);
+values="$${P_1 = &emsp;" + p1r.toFixed(2);
+if(p1i>0)
+  values=values+"+" +p1i.toFixed(2) + "i}$$$${P_2 = &emsp;" + p2r.toFixed(2) ;
+else
+  values=values +p1i.toFixed(2) + "i}$$$${P_2 = &emsp;" + p2r.toFixed(2) ;
+if(p2i>0)
+  values=values+"+" + p2i.toFixed(2)+"i}$$";
+else
+  values=values + p2i.toFixed(2)+"i}$$";
+//document.getElementById("Poles").innerHTML=values;
+MathJax.Hub.Queue(["Typeset",MathJax.Hub,"Poles"]);
+//document.getElementById("Gain").innerHTML="$${K = &emsp;" + u + " }$$";
+MathJax.Hub.Queue(["Typeset",MathJax.Hub,"Gain"]);
 var output;
+var linev;
 
-output =  "&emsp;&emsp;&emsp;"+ roots.length;
-document.getElementById("output1").innerHTML=output;
-output =  "&emsp;&emsp;&emsp;"+ poles.length;
-document.getElementById("output2").innerHTML=output;
 output = "g = <br>"+eqn;
-document.getElementById("out3").innerHTML=output;
+document.getElementById("out2").innerHTML=output;
+MathJax.Hub.Queue(["Typeset",MathJax.Hub,"out2"]);
 var j,k;
-output = "Z(zeroes) = <br><br>";
-for(j=0;j<roots.length;j++)
-{if(ni != 1 )
-  output = output+"&emsp;&emsp;   " + roots[j].x+"<br><br>";
-  else
-  {
-     output = output+ "&emsp;&emsp;   " + roots[j].x+"&emsp; + &emsp;"+roots[j].y+"&emsp; i"+"<br><br>";
-  }
-}
-output = output+"P(poles) = <br><br>";
-for(j=0;j<poles.length;j++)
-{if(di != 1 )
-  output = output+"&emsp;&emsp;   " + poles[j].x+"<br><br>";
-  else
-  {
-     output = output+ "&emsp;&emsp;   " + poles[j].x+"&emsp; + &emsp;"+poles[j].y+"&emsp; i"+"<br><br>";
-  }
-}
-
-ni=0;
-di=0;
-var k;
-k = nums/dens;
-output = output + "K(Gain) =<br><br> &emsp;" + k.toFixed(2) +"<br><br>";
-document.getElementById("out4").innerHTML=output;
+output = "numerator coeffecients=  <br><br>"+"&emsp;&emsp;&emsp;" + num1 +" " + num2 +" "+num3 + "<br><br>denominator coeffecients= <br><br>&emsp;&emsp;&emsp;"+den1+" "+den2+" "+den3 ;
+document.getElementById("out1").innerHTML=output;
 var ms =window.matchMedia("(max-width:950px)"); 
     cwidth(ms);
-    ms.addListener(cwidth);
-MathJax.Hub.Queue(["Typeset",MathJax.Hub,"generated_eqn"]);
-MathJax.Hub.Queue(["Typeset",MathJax.Hub,"out3"]);
-}
+    ms.addListener(cwidth);}
 else
 {
-  mto=1;
-document.getElementById("generated_eqn").innerHTML ="$${\\frac{as^2 + bs + c}{ps^2 + qs + r} }$$";
-MathJax.Hub.Queue(["Typeset",MathJax.Hub,"generated_eqn"]);
+mto=1;
 document.getElementById("mrun").disabled = true;
 document.getElementById("mrun").classList.remove('mrunenabled','mrundisabled');
 document.getElementById("mrun").classList.add('mrundisabled');
+//document.getElementById("generated_eqn").setAttribute("style","display:none");
 document.getElementById("matwork").classList.add('mat');
+document.getElementById("Zeroes").innerHTML="$${Z_1=}$$$${Z_2=}$$";
+document.getElementById("Poles").innerHTML="$${P_1=}$$$${P_2=}$$";
+document.getElementById("Gain").innerHTML="$${K}$$";
+MathJax.Hub.Queue(["Typeset",MathJax.Hub,"Zeroes"]);
+MathJax.Hub.Queue(["Typeset",MathJax.Hub,"Poles"]);
+MathJax.Hub.Queue(["Typeset",MathJax.Hub,"Gain"]);
 document.getElementById("matwork").setAttribute("style","opacity:0.5");
 document.getElementById("matwork").title="Please enter the values of coeffecients of the equation first";
 }
@@ -277,21 +230,54 @@ function discriminant( a, b, c)
 };
 
 
-function showval()
+function showval(num)
 {
-genval("numa","la");
-genval("numb","lb");
-genval("numc","lc");
-genval("dena","lp");
-genval("denb","lq");
-genval("denc","lr");
+if(num==1)
+  {genval("z1i","z2i",0);
+    genval("z1r","z2r",1);
+  }
+  else if(num==2)
+  {
+    genval("z2i","z1i",0);
+    genval("z2r","z1r",1);
+  }
+  else if(num==3)
+  {
+  genval("p1i","p2i",0);
+    genval("p1r","p2r",1);
+  }
+  else if(num==4){
+  genval("p2i","p1i",0);
+    genval("p2r","p1r",1);}
+  else if(num==5){
+    if(document.getElementById("z1i").value!="" || document.getElementById("z1i").value!= 0 )
+       genval("z1r","z2r",1);
+  }
+  else if(num==6){
+    if(document.getElementById("z1i").value!="" || document.getElementById("z1i").value!= 0 )
+       genval("z2r","z1r",1);
+  }
+  else if(num==7){
+    if(document.getElementById("p1i").value!="" || document.getElementById("p1i").value!= 0 )
+       genval("p1r","p2r",1);
+  }
+  else{
+    if(document.getElementById("p1i").value!="" || document.getElementById("p1i").value!= 0 )
+       genval("p2r","p1r",1);
+  }
 };
 
-function genval(idofinput,idofspan){
+function genval(idofinput,idofspan,num){
 var x ;
 x = document.getElementById(idofinput).value;
 //var x1 = x.toFixed(2);
-document.getElementById(idofspan).innerHTML=x;
+if(num)
+document.getElementById(idofspan).value=x;
+else
+{ x=parseFloat(x);
+  x=x*-1;
+  document.getElementById(idofspan).value=x.toFixed(2);
+}
 };
 
 var lc=1;
@@ -299,19 +285,19 @@ var lc=1;
 function runprog(i)
 {
 lc=lc+1;
-if(lc<=5)
+if(lc<=3)
 highlightline(lc);
 else
-{ document.getElementById("line5").setAttribute("style","color:black;");
+{ mto=1;
+  document.getElementById("line3").setAttribute("style","color:black;");
   document.getElementById("mrun").disabled = true;
   var ms = window.matchMedia("screen and (max-width:950px)");
-  console.log(ms);
   widthcheck(ms);
   ms.addListener(widthcheck);
   document.getElementById("mrun").disabled=true;
   document.getElementById("mrun").classList.remove("mrunenabled");
   document.getElementById("mrun").classList.add("mrundisabled");
-  for(j=0;j<poles.length;j++)
+for(j=0;j<poles.length;j++)
 {
   if(poles[j].x<0)
   {
@@ -344,6 +330,7 @@ else
   document.getElementById("fconclusions").innerHTML="As one pole of the system lies in left half of the s-plane, therefore the System is Stable";
   else
   document.getElementById("fconclusions").innerHTML="As two poles of the system lies in left half of the s-plane, therefore the System is Stable";
+
 
 }
 };
@@ -412,7 +399,9 @@ function widthcheck(ms){
 if(ms.matches)
   document.getElementById("chartcont").setAttribute("style","display:block;");
 else
-  document.getElementById("chartcont1").setAttribute("style","display:block;");}
+  {document.getElementById("chartcont1").setAttribute("style","display:block;");
+//    document.getElementById("generated_eqn").setAttribute("style","display:block;");
+}}
 
 function highlightline(l)
 {
