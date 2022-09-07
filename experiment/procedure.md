@@ -1,6 +1,6 @@
 ### Procedure for the experiment is as follows:
 
-1. Select the experiment you want to perform from the header.
+1. 
 2. Enter the values of required variables as according to selected experiment.
 3. Submit the values.
 4. If values are entered correctly the Calculations/Command window will be available.
