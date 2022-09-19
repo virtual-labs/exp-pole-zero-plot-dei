@@ -221,7 +221,7 @@ eqn = numerator + denominator;
 //document.getElementById("generated_eqn").innerHTML = eqn;
 
 var output;
-=======
+
 function addval() {
     var nums, dens;
     var a = document.getElementById("numa").value;
