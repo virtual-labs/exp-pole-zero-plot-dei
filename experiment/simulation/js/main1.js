@@ -599,7 +599,7 @@ window.ch = new Chart(chartplot, {
               }
       ],
 
-
+    }
 });
 }
 function widthcheck(ms){
