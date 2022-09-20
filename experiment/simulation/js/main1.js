@@ -599,15 +599,7 @@ window.ch = new Chart(chartplot, {
               }
       ],
 
-function widthcheck(ms) {
-    if (ms.matches)
-        document.getElementById("chartcont").setAttribute("style", "display:block;");
-    else {
-        document.getElementById("chartcont1").setAttribute("style", "display:block;");
-        //    document.getElementById("generated_eqn").setAttribute("style","display:block;");
 
-    }
-  }
 });
 }
 function widthcheck(ms){
