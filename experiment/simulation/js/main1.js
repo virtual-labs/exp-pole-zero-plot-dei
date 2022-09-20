@@ -382,7 +382,7 @@ function runprog(i) {
             document.getElementById("fconclusions").innerHTML = "As two poles of the system lies in left half of the s-plane, therefore the System is Stable";
 
 
-    }
+    
 
 };
 
