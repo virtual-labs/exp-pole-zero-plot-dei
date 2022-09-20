@@ -598,7 +598,7 @@ window.ch = new Chart(chartplot, {
                 }
               }
       ],
-
+    }
     }
 });
 }
