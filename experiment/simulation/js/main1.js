@@ -642,4 +642,4 @@ function dispmenu(val)
          document.body.style.backgroundColor="white";
           document.getElementById("simulation-cont").setAttribute("style","opacity:01");
       document.getElementById("navbar").setAttribute("style","display:none");}
-}
+}}
