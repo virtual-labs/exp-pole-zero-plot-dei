@@ -1,8 +1,7 @@
-var mto = 1;
-var syss = 0;
-var sysms = 0;
-var sysus = 0;
-
+var mto=1;
+var syss=0;
+var sysms=0;
+var sysus=0;
 
 var eqn;
 var poles=[],roots=[];
@@ -14,7 +13,6 @@ function changepage() {
     document.getElementById("sm2").click();
 }
 function addval(){
-
 
 var a= document.getElementById("z1r").value;
 var b= document.getElementById("z1i").value;
@@ -156,14 +154,13 @@ if(den2!=0)
       denominator=denominator+ " + " + den2+"s";
     else
       denominator=denominator+ den2+"s";
-else
-denominator=denominator+ den2+"s";
+  else
+    denominator=denominator+ den2+"s";
 if(den3!=0)
   if(den1!=0 || den2!==0)
     if(den3>0)
       denominator=denominator+ " + " + den3;
     else
-
       denominator=denominator+ den3;
 else
 denominator=denominator+ den3;
@@ -225,7 +222,6 @@ MathJax.Hub.Queue(["Typeset",MathJax.Hub,"Gain"]);
 document.getElementById("matwork").setAttribute("style","opacity:0.5");
 document.getElementById("matwork").title="Please enter the values of coeffecients of the equation first";
 }
-
 };
 
 function discriminant( a, b, c)
@@ -286,7 +282,6 @@ else
 
 var lc=1;
 
-
 function runprog(i)
 {
 lc=lc+1;
@@ -338,52 +333,6 @@ else
 
 
 }
-
-function runprog(i) {
-    lc = lc + 1;
-    if (lc <= 3)
-        highlightline(lc);
-    else {
-        mto = 1;
-        document.getElementById("line3").setAttribute("style", "color:black;");
-        document.getElementById("mrun").disabled = true;
-        var ms = window.matchMedia("screen and (max-width:950px)");
-        widthcheck(ms);
-        ms.addListener(widthcheck);
-        document.getElementById("mrun").disabled = true;
-        document.getElementById("mrun").classList.remove("mrunenabled");
-        document.getElementById("mrun").classList.add("mrundisabled");
-        for (j = 0; j < poles.length; j++) {
-            if (poles[j].x < 0) {
-                syss = syss + 1;
-                document.getElementById("fconclusions").innerHTML = "STABLE: As all poles lie in left half of s-plane.";
-            } else if (poles[j].x == 0) {
-                sysms = sysms + 1;
-                document.getElementById("fconclusions").innerHTML = "MARGINALLY STABLE: Atleast one pole lie on imaginary axis.";
-            } else {
-                sysus = sysus + 1;
-
-            }
-        }
-        if (sysus > 0)
-            if (sysus == 1)
-                document.getElementById("fconclusions").innerHTML = "As one pole of the system lies in right half of the s-plane, therefore the system is Unstable";
-            else
-                document.getElementById("fconclusions").innerHTML = "As two poles of the system lies in right half of the s-plane, therefore the system is Unstable";
-        else if (sysms > 0)
-            if (sysms == 1)
-                document.getElementById("fconclusions").innerHTML = "As one pole of the system lies on the imaginary-axis, therefore the System is Marginally stable";
-            else
-                document.getElementById("fconclusions").innerHTML = "As two poles of the system lies on the imaginary-axis, therefore the System is Marginally stable";
-        else
-        if (syss == 1)
-            document.getElementById("fconclusions").innerHTML = "As one pole of the system lies in left half of the s-plane, therefore the System is Stable";
-        else
-            document.getElementById("fconclusions").innerHTML = "As two poles of the system lies in left half of the s-plane, therefore the System is Stable";
-
-
-    
-    }
 };
 
 function cwidth(ms) {
@@ -423,7 +372,6 @@ window.ch = new Chart(chartplot, {
         usePointStyle: true
       },
 
-
     },
     scales: {
      
@@ -444,7 +392,7 @@ window.ch = new Chart(chartplot, {
               }
       ],
     }
-    }
+  }
 });
 }
 function widthcheck(ms){
@@ -487,4 +435,4 @@ function dispmenu(val)
          document.body.style.backgroundColor="white";
           document.getElementById("simulation-cont").setAttribute("style","opacity:01");
       document.getElementById("navbar").setAttribute("style","display:none");}
-}}
+}
