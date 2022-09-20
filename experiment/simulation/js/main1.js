@@ -135,46 +135,6 @@ if(num2!=0)
   if(num1!=0)
     if(num2>0)
       numerator=numerator+" + " + num2+"s";
-
-function addval() {
-
-    var a = document.getElementById("z1r").value;
-    var b = document.getElementById("z1i").value;
-    var c = document.getElementById("z2r").value;
-    var p = document.getElementById("z2i").value;
-    var q = document.getElementById("p1r").value;
-    var r = document.getElementById("p1i").value;
-    var s = document.getElementById("p2r").value;
-    var t = document.getElementById("p2i").value;
-    var u = document.getElementById("gk").value;
-    roots = [];
-    poles = [];
-    var x1, y1;
-    var ni = 0,
-        di = 0;
-    if (a == "")
-        var z1r = 0;
-    else
-        var z1r = parseFloat(a);
-    if (b == "")
-        var z1i = 0;
-    else
-        var z1i = parseFloat(b);
-    if (c == "")
-        var z2r = 0;
-    else
-        var z2r = parseFloat(c);
-    if (p == "")
-        var z2i = 0;
-    else
-        var z2i = parseFloat(p);
-    if (q == "")
-        var p1r = 0;
-    else
-        var p1r = parseFloat(q);
-    if (r == "")
-        var p1i = 0;
-
     else
       numerator=numerator+ num2+"s";
   else
