@@ -3,6 +3,7 @@
 {
     "version": 2.0,
     "questions": [{
+
             "question": "What are Zeros of a transfer function: ",
             "answers": {
                 "a": " Roots of polynomial of the numerator of transfer function ",
@@ -38,6 +39,7 @@
     
     {
             "question": "What will be the order of given transfer function :<img src=\"./images/pretesteq1.svg \"> ",
+
             "answers": {
                 "a": "1",
                 "b": "2",
