@@ -363,6 +363,7 @@ font-size: 10px;}
 }
 }
 
+
 @media screen and (min-height: 1000px)
 {
 #enter-val{
@@ -380,6 +381,7 @@ height: 91%;}
   top: 0.5vh;
 font-size: 30px;}
 }
+
 
 @media screen and (max-height: 680px)
 {
