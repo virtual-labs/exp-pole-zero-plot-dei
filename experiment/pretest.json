@@ -1,37 +1,63 @@
+
+
 {
     "version": 2.0,
     "questions": [{
-            "question": "What will be the order of given transfer function : "["Divide", "n", ["Add", 1, "n"]]",
+
+            "question": "What are Zeros of a transfer function: ",
+            "answers": {
+                "a": " Roots of polynomial of the numerator of transfer function ",
+                "b": " Roots of polynomial of the denominator of transfer function ",
+                "c": " Both (a) and (b)",
+                "d": " None of above"
+            },
+            "correctAnswer": "a",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "What are Poles of a transfer function: ",
+            "answers": {
+                "a": " Roots of polynomial of the numerator of transfer function ",
+                "b": " Roots of polynomial of the denominator of transfer function ",
+                "c": " Both (a) and (b)",
+                "d": " None of above"
+            },
+            "correctAnswer": "b",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "What is DC gain of transfer function: ",
+            "answers": {
+                "a": " Roots of polynomial of the numerator of transfer function ",
+                "b": " Roots of polynomial of the denominator of transfer function ",
+                "c": " The magnitude  of transfer function on putting s = 0",
+                "d": " None of above"
+            },
+            "correctAnswer": "c",
+            "difficulty": "beginner"
+        },
+    
+    {
+            "question": "What will be the order of given transfer function :<img src=\"./images/pretesteq1.svg \"> ",
+
             "answers": {
                 "a": "1",
                 "b": "2",
                 "c": "3",
                 "d": "5"
             },
-            "explanations": {
-                "a": "Explanation 1  <a href='www.google.com'>here</a>",
-                "b": "Explanation 2",
-                "c": "Explanation 2",
-                "d": "Explanation 2"
-            },
-            "correctAnswer": "a",
+            "correctAnswer": "b",
             "difficulty": "beginner"
         },
         {
-            "question": "What will be the number of poles and zeroes of given transfer function : $${ \frac{5s + 4}{3s^2 + 1s + 1} }$$",
+            "question": "What will be the number of poles and zeroes of given transfer function :<img src=\"./images/pretesteq1.svg \">  ",
             "answers": {
-                "a": "a.) 0,1",
-                "b": "b.) 2,0",
-                "c": "c.) 1,1",
-                "d": "d.) 2,1"
+                "a": " 0,1",
+                "b": " 2,0",
+                "c": " 1,1",
+                "d": " 1,2"
             },
-            "explanations": {
-                "a": "Explanation 1  <a href='www.google.com'>here</a>",
-                "b": "Explanation 2",
-                "c": "Explanation 2",
-                "d": "Explanation 2"
-            },
-            "correctAnswer": "c",
+            "correctAnswer": "d",
             "difficulty": "beginner"
         }
     ]
