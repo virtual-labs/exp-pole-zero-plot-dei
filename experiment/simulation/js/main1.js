@@ -68,7 +68,6 @@ lc = 1;
 document.getElementById("line1").setAttribute("style","color:blue");
 document.getElementById("chartcont").setAttribute("style","display:none");
 document.getElementById("chartcont1").setAttribute("style","display:none;");
-//document.getElementById("generated_eqn").setAttribute("style","display:none");
 for(let i=1;i<3;i++)
 {
  let out = "out" + i;
@@ -154,8 +153,8 @@ if(den2!=0)
       denominator=denominator+ " + " + den2+"s";
     else
       denominator=denominator+ den2+"s";
-else
-denominator=denominator+ den2+"s";
+  else
+    denominator=denominator+ den2+"s";
 if(den3!=0)
   if(den1!=0 || den2!==0)
     if(den3>0)
@@ -167,8 +166,7 @@ denominator=denominator+ den3;
 denominator=denominator+"}}$$";
 eqn = numerator + denominator;
 var values;
-//document.getElementById("generated_eqn").innerHTML="Generated Equation=<br>"+eqn;
-//MathJax.Hub.Queue(["Typeset",MathJax.Hub,"generated_eqn"]);
+
 values="$${Z_1 = &emsp;" + z1r.toFixed(2);
 if(z1i>0)
   values= values+ "+" +z1i.toFixed(2) + "i}$$$${Z_2 = &emsp;" + z2r.toFixed(2);
@@ -178,7 +176,6 @@ if(z2i>0)
   values= values+"+" + z2i.toFixed(2)+"i}$$";
 else
   values= values + z2i.toFixed(2)+"i}$$";
-//document.getElementById("Zeroes").innerHTML=values;
 MathJax.Hub.Queue(["Typeset",MathJax.Hub,"Zeroes"]);
 values="$${P_1 = &emsp;" + p1r.toFixed(2);
 if(p1i>0)
@@ -189,9 +186,9 @@ if(p2i>0)
   values=values+"+" + p2i.toFixed(2)+"i}$$";
 else
   values=values + p2i.toFixed(2)+"i}$$";
-//document.getElementById("Poles").innerHTML=values;
+
 MathJax.Hub.Queue(["Typeset",MathJax.Hub,"Poles"]);
-//document.getElementById("Gain").innerHTML="$${K = &emsp;" + u + " }$$";
+
 MathJax.Hub.Queue(["Typeset",MathJax.Hub,"Gain"]);
 var output;
 var linev;
@@ -211,7 +208,7 @@ mto=1;
 document.getElementById("mrun").disabled = true;
 document.getElementById("mrun").classList.remove('mrunenabled','mrundisabled');
 document.getElementById("mrun").classList.add('mrundisabled');
-//document.getElementById("generated_eqn").setAttribute("style","display:none");
+
 document.getElementById("matwork").classList.add('mat');
 document.getElementById("Zeroes").innerHTML="$${Z_1=}$$$${Z_2=}$$";
 document.getElementById("Poles").innerHTML="$${P_1=}$$$${P_2=}$$";
@@ -270,7 +267,7 @@ if(num==1)
 function genval(idofinput,idofspan,num){
 var x ;
 x = document.getElementById(idofinput).value;
-//var x1 = x.toFixed(2);
+
 if(num)
 document.getElementById(idofspan).value=x;
 else
@@ -400,7 +397,7 @@ if(ms.matches)
   document.getElementById("chartcont").setAttribute("style","display:block;");
 else
   {document.getElementById("chartcont1").setAttribute("style","display:block;");
-//    document.getElementById("generated_eqn").setAttribute("style","display:block;");
+
 }}
 
 function highlightline(l)

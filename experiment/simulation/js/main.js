@@ -69,12 +69,11 @@ document.getElementById("matwork").setAttribute("style","opacity:1");
 syss = 0;
 sysms=0;
 sysus=0;
-/*document.getElementById("mrun").setAttribute("style","background-color:dodgerblue");
-document.getElementById("mrun").style.color="whitesmoke";
-document.getElementById("mrun").style.cursor="pointer";*/
+
 document.getElementById("mrun").classList.remove("mrundisabled","mrunenabled");
 document.getElementById("mrun").classList.add("mrunenabled");
 document.getElementById("matwork").classList.remove('mat');
+document.getElementById("fconclusions").innerHTML="Conclusions will show here";
 if(a1!=0){
 nums=a1;
 numd=discriminant(a1,b1,c1);
@@ -83,33 +82,28 @@ if(numd>0)
   x1 = (-1*b1-Math.sqrt(numd))/2/a1;
 
   x1 =Math.round(x1 * 100) / 100;
-  //x1=x1.toFixed(2);
-  //x1=parseInt(x1);
+
   roots.push({x:x1,y:0});
   x1 = (-1*b1+Math.sqrt(numd))/2/a1;
   x1 =Math.round(x1 * 100) / 100;
-  /*x1=x1.toFixed(2);
-  x1=parseInt(x1);*/
+
   roots.push({x:x1,y:0});
 }
 else if(numd==0)
 {
   x1 = (-1*b1-Math.sqrt(numd))/2/a1;
   x1 =Math.round(x1 * 100) / 100;
-  /*x1=x1.toFixed(2);
-  x1=parseInt(x1);*/
+
   roots.push({x:x1,y:0});
 }
 else
 {
   x1 = (-1*b1/(2*a1));
   x1 =Math.round(x1 * 100) / 100;
-  /*x1=x1.toFixed(2);
-  x1=parseInt(x1);*/
+
   y1 = (Math.sqrt(-1*numd)/2/a1)
   y1 =Math.round(y1 * 100) / 100;
- /* y1=y1.toFixed(2);
-  y1=parseInt(y1);*/
+
   roots.push({x:x1,y:y1});
   roots.push({x:x1,y:-1*y1});
   ni=1;
@@ -132,33 +126,28 @@ if(dend>0)
 {
   x1 = (-1*b2-Math.sqrt(dend))/2/a2;
   x1 =Math.round(x1 * 100) / 100;
-  /*x1=x1.toFixed(2);
-  x1=parseInt(x1);*/
+
   poles.push({x:x1,y:0});
   x1 = (-1*b2+Math.sqrt(dend))/2/a2;
   x1 =Math.round(x1 * 100) / 100;
- /* x1=x1.toFixed(2);
-  x1=parseInt(x1);*/
+
   poles.push({x:x1,y:0});
 }
 else if(dend==0)
 {
   x1 = (-1*b2-Math.sqrt(dend))/2/a2;
   x1 =Math.round(x1 * 100) / 100;
-  /*x1=x1.toFixed(2);
-  x1=parseInt(x1);*/
+
   poles.push({x:x1,y:0});
 }
 else
 {
   x1 = (-1*b2/(2*a2));
   x1 =Math.round(x1 * 100) / 100;
- /* x1=x1.toFixed(2);
-  x1=parseInt(x1);*/
+
   y1 = (Math.sqrt(-1*dend)/2/a2);
   y1 =Math.round(y1 * 100) / 100;
- /* y1=y1.toFixed(2);
-  y1=parseInt(y1);*/
+
   poles.push({x:x1,y:y1});
   poles.push({x:x1,y:-1*y1});
   di=1;
@@ -192,7 +181,7 @@ if(c>0)
       numerator=numerator + c;
   else
   numerator=numerator+ c;
-numerator = numerator+"}";
+numerator=numerator+"}";
 var denominator = "{";
 if(p!=0)
 denominator=denominator+p+"s^2";
@@ -206,7 +195,7 @@ if(q!=0)
     denominator=denominator+ q+"s";
 if(r!=0)
   if(p!=0||q!=0)
-if(r>0)
+  if(r>0)
       denominator=denominator+ " + " + r;
     else
       denominator=denominator + r;
@@ -215,7 +204,6 @@ else
 denominator=denominator+"}}$$";
 eqn = numerator + denominator;
 
-//document.getElementById("generated_eqn").innerHTML = eqn;
 
 var output;
 
@@ -268,6 +256,7 @@ document.getElementById("mrun").classList.add('mrundisabled');
 document.getElementById("matwork").classList.add('mat');
 document.getElementById("matwork").setAttribute("style","opacity:0.5");
 document.getElementById("matwork").title="Please enter the values of coeffecients of the equation first";
+document.getElementById("fconclusions").innerHTML="Conclusions will show here"
 }
 };
 
@@ -290,7 +279,6 @@ genval("denc","lr");
 function genval(idofinput,idofspan){
 var x ;
 x = document.getElementById(idofinput).value;
-//var x1 = x.toFixed(2);
 document.getElementById(idofspan).innerHTML=x;
 };
 
@@ -305,7 +293,6 @@ else
 { document.getElementById("line5").setAttribute("style","color:black;");
   document.getElementById("mrun").disabled = true;
   var ms = window.matchMedia("screen and (max-width:950px)");
-  console.log(ms);
   widthcheck(ms);
   ms.addListener(widthcheck);
   document.getElementById("mrun").disabled=true;
