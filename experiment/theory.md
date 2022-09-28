@@ -5,4 +5,4 @@ $${G(s) = \frac{N(s)}{D(s)} = k\frac{(s-z_1 )(s-z_2 )... ... ...(s-z_n)}{(s-p_1 
 Where, the numerator and denominator polynomials, N(s) and D(s).<br>
 				The values of s for which N(s) =0, are known as zeros of the system. i.e; at: $${s = z_1, z_2……….. z_n}$$
 				The values of s for which D(s) =0, are known as poles of the system. i.e; at: $${s = p_1, p_2……….. p_m}$$
-				Obtain Pole, zero, gain values of any transfer functions and transfer function from pole,zero and gain and plot them. Also verify your result theoretically.
+				Obtain Pole, zero, gain values of any transfer functions and transfer function from pole, zero and gain and plot them. Also verify your result theoretically.
