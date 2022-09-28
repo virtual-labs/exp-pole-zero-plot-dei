@@ -94,6 +94,7 @@ else if(numd==0)
   x1 = (-1*b1-Math.sqrt(numd))/2/a1;
   x1 =Math.round(x1 * 100) / 100;
 
+
   roots.push({x:x1,y:0});
 }
 else
@@ -276,6 +277,7 @@ genval("denb","lq");
 genval("denc","lr");
 };
 
+
 function genval(idofinput,idofspan){
 var x ;
 x = document.getElementById(idofinput).value;
@@ -283,6 +285,7 @@ document.getElementById(idofspan).innerHTML=x;
 };
 
 var lc=1;
+
 
 function runprog(i)
 {

@@ -219,6 +219,7 @@ MathJax.Hub.Queue(["Typeset",MathJax.Hub,"Gain"]);
 document.getElementById("matwork").setAttribute("style","opacity:0.5");
 document.getElementById("matwork").title="Please enter the values of coeffecients of the equation first";
 }
+
 };
 
 function discriminant( a, b, c)
@@ -369,6 +370,7 @@ window.ch = new Chart(chartplot, {
         usePointStyle: true
       },
 
+
     },
     scales: {
      
@@ -388,6 +390,7 @@ window.ch = new Chart(chartplot, {
                 }
               }
       ],
+
     }
   }
 });
