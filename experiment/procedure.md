@@ -1,10 +1,26 @@
 ### Procedure for the experiment is as follows:
 
-1. Select the experiment you want to perform by clicking on its heading.
-2. To enter the required variable values for the chosen experiment, adjust the slider values.
-3. To enter the variable values, press the submit button.
-4. If input parameter values are acceptable, the calculations window will be accessable.
-5. Click the run button to begin executing the commands to obtain the calculated  values of required parameters in the calculations window, line by line.
-6. After each click of run button, the calculations window will display the results of each step.
-7. When the entire program is executed, the final plot and results obtained on the right window (for desktop/laptops or wide screens), while they are displayed inside the calculations window, below the final program line (incase of smart phones/small screens).
-8. A conclusion based on the results obtained will be displayed in the Conclusions window, which is located in the bottom most section
+1.1. Procedure: Select “To obtain poles, zeros and gain of transfer function”
+            1.1.1. User Input: 
+                1.1.1.1. Firstly, adjust the values of the coefficients a, b and c of a numerator polynomial by sliding the slider.
+                1.1.1.2. Now adjust the values of coefficients p, q and r of a denominator polynomial by sliding the slider.
+                1.1.1.3. Press submit button to submit the values of coefficients of numerator and denominator polynomial.
+            1.1.2. Calculations: 
+                1.1.2.1. Click on the run button to obtain number of zeroes.
+                1.1.2.2. Click on run button again to obtain number of poles.
+                1.1.2.3. Again, click on run button to get the generated transfer function for given coefficients.
+                1.1.2.4. On clicking the run button again, you will get calculated locations of pole, zero and gain values in calculation window.
+            1.1.3. Results: 
+                1.1.3.1. Once more click on the run button “To plot the location of poles and zeros in s-plane in result section and Conclusions in conclusions section (bottom)”
+
+1.2. Procedure: Select “ To obtain transfer function from poles, zeros and gain”
+            1.2.1. User Input: 
+                1.2.1.1 Firstly, enter the location of Zeros Z1 and Z2 by scroll up or down. 
+                1.2.1.2 Now enter the location of Poles P1 and P2 by scroll up and down. 
+                1.2.1.3 Type the vale of gain in K block of user input section
+                1.2.1.4 Press submit button to submit the location of poles, zeros and gain of transfer function.
+            1.2.2 Calculations: 
+                1.2.1.1. Click on the run button to obtain coefficients of a numerator and denominator polynomials in calculations window.
+                1.2.1.2. Click on run button again to obtain generated transfer function in calculations window. 
+            1.2.3. Results: 
+                1.2.1.3. Once more click on the run button “To plot the location of poles and zeros in s-plane in result section and Conclusions in conclusions section (bottom)”
