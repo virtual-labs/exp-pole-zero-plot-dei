@@ -392,6 +392,7 @@ height: 77%;}
 }
 }
 
+
 @media screen and (min-width: 1000px)
 {
 @media screen and (min-height: 700px)
@@ -399,6 +400,7 @@ height: 77%;}
 #enter-val{
 height: 80vh;}
 }
+
 }
 
 @media screen and (max-width: 600px)
