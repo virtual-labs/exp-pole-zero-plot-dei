@@ -1,3 +1,2 @@
-1. To obtain pole, zero and gain values from a given transfer function of 2<sup>nd</sup> order or below.
-2. To obtain pole, zero plot of a transfer function.
-3. To obtain Transfer function from poles,zeroes and gain.
+1. To obtain gain value and locations of poles, zeros to plot in s-plane from a given transfer function of a second order system.
+2. To obtain transfer function from the given locations of poles, zeroes and gain value and plot in s-plane
