@@ -1,0 +1,203 @@
+
+/home/runner/work/exp-pole-zero-plot-dei/exp-pole-zero-plot-dei/experiment/simulation/js/main.js
+    8:10  warning  'changepage' is defined but never used                                                                                 no-unused-vars
+   15:10  warning  'addval' is defined but never used                                                                                     no-unused-vars
+   27:1   warning  'a1' is not defined                                                                                                    no-undef
+   28:1   warning  'b1' is not defined                                                                                                    no-undef
+   29:1   warning  'c1' is not defined                                                                                                    no-undef
+   30:1   warning  'a2' is not defined                                                                                                    no-undef
+   31:1   warning  'b2' is not defined                                                                                                    no-undef
+   32:1   warning  'c2' is not defined                                                                                                    no-undef
+   44:4   warning  'a1' is not defined                                                                                                    no-undef
+   44:13  warning  'a2' is not defined                                                                                                    no-undef
+   44:22  warning  'b1' is not defined                                                                                                    no-undef
+   44:31  warning  'c1' is not defined                                                                                                    no-undef
+   46:9   warning  'a1' is not defined                                                                                                    no-undef
+   46:18  warning  'a2' is not defined                                                                                                    no-undef
+   51:9   warning  'c1' is not defined                                                                                                    no-undef
+   51:19  warning  'b2' is not defined                                                                                                    no-undef
+   51:28  warning  'a2' is not defined                                                                                                    no-undef
+   53:9   warning  'a2' is not defined                                                                                                    no-undef
+   53:18  warning  'b2' is not defined                                                                                                    no-undef
+   57:9   warning  'a1' is not defined                                                                                                    no-undef
+   57:18  warning  'b1' is not defined                                                                                                    no-undef
+   57:27  warning  'c1' is not defined                                                                                                    no-undef
+   60:9   warning  This branch can never execute. Its condition is a duplicate or covered by previous conditions in the if-else-if chain  no-dupe-else-if
+   60:9   warning  'a2' is not defined                                                                                                    no-undef
+   60:18  warning  'b2' is not defined                                                                                                    no-undef
+   60:27  warning  'c2' is not defined                                                                                                    no-undef
+   77:4   warning  'a1' is not defined                                                                                                    no-undef
+   78:6   warning  'a1' is not defined                                                                                                    no-undef
+   79:1   warning  'numd' is not defined                                                                                                  no-undef
+   79:19  warning  'a1' is not defined                                                                                                    no-undef
+   79:22  warning  'b1' is not defined                                                                                                    no-undef
+   79:25  warning  'c1' is not defined                                                                                                    no-undef
+   80:4   warning  'numd' is not defined                                                                                                  no-undef
+   82:12  warning  'b1' is not defined                                                                                                    no-undef
+   82:25  warning  'numd' is not defined                                                                                                  no-undef
+   82:34  warning  'a1' is not defined                                                                                                    no-undef
+   87:12  warning  'b1' is not defined                                                                                                    no-undef
+   87:25  warning  'numd' is not defined                                                                                                  no-undef
+   87:34  warning  'a1' is not defined                                                                                                    no-undef
+   92:9   warning  'numd' is not defined                                                                                                  no-undef
+   94:12  warning  'b1' is not defined                                                                                                    no-undef
+   94:25  warning  'numd' is not defined                                                                                                  no-undef
+   94:34  warning  'a1' is not defined                                                                                                    no-undef
+  102:12  warning  'b1' is not defined                                                                                                    no-undef
+  102:18  warning  'a1' is not defined                                                                                                    no-undef
+  105:22  warning  'numd' is not defined                                                                                                  no-undef
+  105:30  warning  'a1' is not defined                                                                                                    no-undef
+  114:6   warning  'b1' is not defined                                                                                                    no-undef
+  116:10  warning  'b1' is not defined                                                                                                    no-undef
+  117:19  warning  'c1' is not defined                                                                                                    no-undef
+  117:22  warning  'b1' is not defined                                                                                                    no-undef
+  121:10  warning  'c1' is not defined                                                                                                    no-undef
+  123:4   warning  'a2' is not defined                                                                                                    no-undef
+  124:8   warning  'a2' is not defined                                                                                                    no-undef
+  125:1   warning  'dend' is not defined                                                                                                  no-undef
+  125:19  warning  'a2' is not defined                                                                                                    no-undef
+  125:22  warning  'b2' is not defined                                                                                                    no-undef
+  125:25  warning  'c2' is not defined                                                                                                    no-undef
+  126:4   warning  'dend' is not defined                                                                                                  no-undef
+  128:12  warning  'b2' is not defined                                                                                                    no-undef
+  128:25  warning  'dend' is not defined                                                                                                  no-undef
+  128:34  warning  'a2' is not defined                                                                                                    no-undef
+  132:12  warning  'b2' is not defined                                                                                                    no-undef
+  132:25  warning  'dend' is not defined                                                                                                  no-undef
+  132:34  warning  'a2' is not defined                                                                                                    no-undef
+  137:9   warning  'dend' is not defined                                                                                                  no-undef
+  139:12  warning  'b2' is not defined                                                                                                    no-undef
+  139:25  warning  'dend' is not defined                                                                                                  no-undef
+  139:34  warning  'a2' is not defined                                                                                                    no-undef
+  146:12  warning  'b2' is not defined                                                                                                    no-undef
+  146:18  warning  'a2' is not defined                                                                                                    no-undef
+  149:22  warning  'dend' is not defined                                                                                                  no-undef
+  149:30  warning  'a2' is not defined                                                                                                    no-undef
+  158:6   warning  'b2' is not defined                                                                                                    no-undef
+  159:10  warning  'b2' is not defined                                                                                                    no-undef
+  160:19  warning  'c2' is not defined                                                                                                    no-undef
+  160:22  warning  'b2' is not defined                                                                                                    no-undef
+  164:10  warning  'c2' is not defined                                                                                                    no-undef
+  239:5   warning  'k' is already defined                                                                                                 no-redeclare
+  246:1   warning  'MathJax' is not defined                                                                                               no-undef
+  246:30  warning  'MathJax' is not defined                                                                                               no-undef
+  247:1   warning  'MathJax' is not defined                                                                                               no-undef
+  247:30  warning  'MathJax' is not defined                                                                                               no-undef
+  253:1   warning  'MathJax' is not defined                                                                                               no-undef
+  253:30  warning  'MathJax' is not defined                                                                                               no-undef
+  262:2   warning  Unnecessary semicolon                                                                                                  no-extra-semi
+  267:2   warning  Unnecessary semicolon                                                                                                  no-extra-semi
+  270:10  warning  'showval' is defined but never used                                                                                    no-unused-vars
+  278:2   warning  Unnecessary semicolon                                                                                                  no-extra-semi
+  285:2   warning  Unnecessary semicolon                                                                                                  no-extra-semi
+  290:10  warning  'runprog' is defined but never used                                                                                    no-unused-vars
+  290:18  warning  'i' is defined but never used                                                                                          no-unused-vars
+  304:7   warning  'j' is not defined                                                                                                     no-undef
+  304:11  warning  'j' is not defined                                                                                                     no-undef
+  304:26  warning  'j' is not defined                                                                                                     no-undef
+  306:12  warning  'j' is not defined                                                                                                     no-undef
+  311:17  warning  'j' is not defined                                                                                                     no-undef
+  339:2   warning  Unnecessary semicolon                                                                                                  no-extra-semi
+  345:11  warning  'chartplot' is already defined                                                                                         no-redeclare
+  349:17  warning  'Chart' is not defined                                                                                                 no-undef
+  416:2   warning  Unnecessary semicolon                                                                                                  no-extra-semi
+  419:10  warning  'dispmenu' is defined but never used                                                                                   no-unused-vars
+
+/home/runner/work/exp-pole-zero-plot-dei/exp-pole-zero-plot-dei/experiment/simulation/js/main1.js
+    8:10   warning  'changepage' is defined but never used       no-unused-vars
+   15:10   warning  'addval' is defined but never used           no-unused-vars
+   28:5    warning  'x1' is defined but never used               no-unused-vars
+   28:8    warning  'y1' is defined but never used               no-unused-vars
+   29:5    warning  'ni' is assigned a value but never used      no-unused-vars
+   29:10   warning  'di' is assigned a value but never used      no-unused-vars
+   33:5    warning  'z1r' is already defined                     no-redeclare
+   37:5    warning  'z1i' is already defined                     no-redeclare
+   41:5    warning  'z2r' is already defined                     no-redeclare
+   45:5    warning  'z2i' is already defined                     no-redeclare
+   49:5    warning  'p1r' is already defined                     no-redeclare
+   53:5    warning  'p1i' is already defined                     no-redeclare
+   57:5    warning  'p2r' is already defined                     no-redeclare
+   61:5    warning  'p2i' is already defined                     no-redeclare
+   65:5    warning  'gk' is already defined                      no-redeclare
+  114:1    warning  'num1' is not defined                        no-undef
+  115:1    warning  'num2' is not defined                        no-undef
+  116:1    warning  'num3' is not defined                        no-undef
+  117:1    warning  'den1' is not defined                        no-undef
+  118:1    warning  'den2' is not defined                        no-undef
+  119:1    warning  'den3' is not defined                        no-undef
+  129:4    warning  'num1' is not defined                        no-undef
+  130:21   warning  'num1' is not defined                        no-undef
+  131:4    warning  'num2' is not defined                        no-undef
+  132:6    warning  'num1' is not defined                        no-undef
+  133:8    warning  'num2' is not defined                        no-undef
+  134:35   warning  'num2' is not defined                        no-undef
+  136:28   warning  'num2' is not defined                        no-undef
+  138:23   warning  'num2' is not defined                        no-undef
+  139:4    warning  'num3' is not defined                        no-undef
+  140:6    warning  'num1' is not defined                        no-undef
+  140:17   warning  'num2' is not defined                        no-undef
+  141:8    warning  'num3' is not defined                        no-undef
+  142:35   warning  'num3' is not defined                        no-undef
+  144:28   warning  'num3' is not defined                        no-undef
+  146:24   warning  'num3' is not defined                        no-undef
+  148:4    warning  'den1' is not defined                        no-undef
+  149:25   warning  'den1' is not defined                        no-undef
+  150:4    warning  'den2' is not defined                        no-undef
+  151:6    warning  'den1' is not defined                        no-undef
+  152:8    warning  'den2' is not defined                        no-undef
+  153:40   warning  'den2' is not defined                        no-undef
+  155:32   warning  'den2' is not defined                        no-undef
+  157:30   warning  'den2' is not defined                        no-undef
+  158:4    warning  'den3' is not defined                        no-undef
+  159:6    warning  'den1' is not defined                        no-undef
+  159:17   warning  'den2' is not defined                        no-undef
+  160:8    warning  'den3' is not defined                        no-undef
+  161:40   warning  'den3' is not defined                        no-undef
+  163:32   warning  'den3' is not defined                        no-undef
+  165:26   warning  'den3' is not defined                        no-undef
+  179:1    warning  'MathJax' is not defined                     no-undef
+  179:30   warning  'MathJax' is not defined                     no-undef
+  188:3    warning  'values' is assigned a value but never used  no-unused-vars
+  190:1    warning  'MathJax' is not defined                     no-undef
+  190:30   warning  'MathJax' is not defined                     no-undef
+  192:1    warning  'MathJax' is not defined                     no-undef
+  192:30   warning  'MathJax' is not defined                     no-undef
+  194:5    warning  'linev' is defined but never used            no-unused-vars
+  198:1    warning  'MathJax' is not defined                     no-undef
+  198:30   warning  'MathJax' is not defined                     no-undef
+  199:5    warning  'j' is defined but never used                no-unused-vars
+  199:7    warning  'k' is defined but never used                no-unused-vars
+  200:69   warning  'num1' is not defined                        no-undef
+  200:81   warning  'num2' is not defined                        no-undef
+  200:91   warning  'num3' is not defined                        no-undef
+  200:161  warning  'den1' is not defined                        no-undef
+  200:170  warning  'den2' is not defined                        no-undef
+  200:179  warning  'den3' is not defined                        no-undef
+  216:1    warning  'MathJax' is not defined                     no-undef
+  216:30   warning  'MathJax' is not defined                     no-undef
+  217:1    warning  'MathJax' is not defined                     no-undef
+  217:30   warning  'MathJax' is not defined                     no-undef
+  218:1    warning  'MathJax' is not defined                     no-undef
+  218:30   warning  'MathJax' is not defined                     no-undef
+  223:2    warning  Unnecessary semicolon                        no-extra-semi
+  225:10   warning  'discriminant' is defined but never used     no-unused-vars
+  228:2    warning  Unnecessary semicolon                        no-extra-semi
+  231:10   warning  'showval' is defined but never used          no-unused-vars
+  266:2    warning  Unnecessary semicolon                        no-extra-semi
+  279:2    warning  Unnecessary semicolon                        no-extra-semi
+  283:10   warning  'runprog' is defined but never used          no-unused-vars
+  283:18   warning  'i' is defined but never used                no-unused-vars
+  298:5    warning  'j' is not defined                           no-undef
+  298:9    warning  'j' is not defined                           no-undef
+  298:24   warning  'j' is not defined                           no-undef
+  300:12   warning  'j' is not defined                           no-undef
+  305:17   warning  'j' is not defined                           no-undef
+  334:2    warning  Unnecessary semicolon                        no-extra-semi
+  340:11   warning  'chartplot' is already defined               no-redeclare
+  344:17   warning  'Chart' is not defined                       no-undef
+  415:2    warning  Unnecessary semicolon                        no-extra-semi
+  418:10   warning  'dispmenu' is defined but never used         no-unused-vars
+
+✖ 195 problems (0 errors, 195 warnings)
+  0 errors and 12 warnings potentially fixable with the `--fix` option.
+

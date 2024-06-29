@@ -1,0 +1,61 @@
+
+{
+    "version": 2.0,
+    "questions": [{
+            "question": "What will be the zeroes,poles and gain of : <img src=\"./images/posttesteq7.svg\">",
+            "answers": {
+                "a": "k = 1",
+                "b": "k = 0.2",
+                "c": "k = 1.67",
+                "d": "k = 0.6"
+            },
+            "correctAnswer": "d",
+            "difficulty": "beginner"
+        },
+    
+    {
+            "question": "What will be the zeroes,poles and gain of : <img src=\"./images/posttesteq1.svg\">",
+            "answers": {
+                "a": " z = 0.8; p = -1,-0.67; k = 1.33",
+                "b": "z = -0.8; p = -1,-0.67; k = 1.33",
+                "c": "z = 0.8; p = -1,-0.67; k = 1.67",
+                "d": "z = -0.8; p = -1,0.67; k = 1.67"
+            },
+            "correctAnswer": "d",
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "What will be the transfer function with: Zeroes = 1 + 2i, 1 - 2i; Poles = 3,2; Gain = 5",
+            "answers": {
+                "a": "<img src=\"./images/posttesteq2.svg\">",
+                "b": "<img src=\"./images/posttesteq3.svg\">",
+                "c": "<img src=\"./images/posttesteq4.svg\">",
+                "d": "<img src=\"./images/posttesteq5.svg\">"
+            },
+            "correctAnswer": "a",
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "What will be the transfer function with: P<sub>1</sub> = -1.4142i ,P<sub>2</sub> = 1.4142i; Z<sub>1</sub> = -2.4495,Z<sub>2</sub> = 2.4495; k = 2",
+            "answers": {
+                "a": "<img src=\"./images/posttesteq9.svg\">",
+                "b": "<img src=\"./images/posttesteq10.svg\">",
+                "c": "<img src=\"./images/posttesteq11.svg\">",
+                "d": "<img src=\"./images/posttesteq12.svg\">"
+            },
+            "correctAnswer": "b",
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "The system will be stable if :",
+            "answers": {
+                "a": "All Zeros lies in left half of s plane.",
+                "b": "All Poles lies in Left half of s plane.",
+                "c": "All Zeros lies in Right half of s plane.",
+                "d": "All Poles lies in Right half of s plane."
+            },
+            "correctAnswer": "b",
+            "difficulty": "beginner"
+        }
+    ]
+}
