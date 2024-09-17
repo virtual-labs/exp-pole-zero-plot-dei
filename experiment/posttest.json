@@ -2,7 +2,7 @@
 {
     "version": 2.0,
     "questions": [{
-            "question": "What will be the zeroes,poles and gain of : <img src=\"./images/posttesteq7.svg\">",
+            "question": "What will be the gain of : <img src=\"./images/posttesteq7.svg\">",
             "answers": {
                 "a": "k = 1",
                 "b": "k = 0.2",
