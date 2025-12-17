@@ -2,7 +2,7 @@
 {
     "version": 2.0,
     "questions": [{
-            "question": "What will be the zeroes,poles and gain of : <img src=\"./images/posttesteq7.svg\">",
+            "question": "1. What will be the zeroes,poles and gain of : <img src=\"./images/posttesteq7.svg\">",
             "answers": {
                 "a": "k = 1",
                 "b": "k = 0.2",
@@ -14,7 +14,7 @@
         },
     
     {
-            "question": "What will be the zeroes,poles and gain of : <img src=\"./images/posttesteq1.svg\">",
+            "question": "2. What will be the zeroes,poles and gain of : <img src=\"./images/posttesteq1.svg\">",
             "answers": {
                 "a": " z = 0.8; p = -1,-0.67; k = 1.33",
                 "b": "z = -0.8; p = -1,-0.67; k = 1.33",
@@ -25,7 +25,7 @@
             "difficulty": "intermediate"
         },
         {
-            "question": "What will be the transfer function with: Zeroes = 1 + 2i, 1 - 2i; Poles = 3,2; Gain = 5",
+            "question": "3. What will be the transfer function with: Zeroes = 1 + 2i, 1 - 2i; Poles = 3,2; Gain = 5",
             "answers": {
                 "a": "<img src=\"./images/posttesteq2.svg\">",
                 "b": "<img src=\"./images/posttesteq3.svg\">",
@@ -36,7 +36,7 @@
             "difficulty": "intermediate"
         },
         {
-            "question": "What will be the transfer function with: P<sub>1</sub> = -1.4142i ,P<sub>2</sub> = 1.4142i; Z<sub>1</sub> = -2.4495,Z<sub>2</sub> = 2.4495; k = 2",
+            "question": "4. What will be the transfer function with: P<sub>1</sub> = -1.4142i ,P<sub>2</sub> = 1.4142i; Z<sub>1</sub> = -2.4495,Z<sub>2</sub> = 2.4495; k = 2",
             "answers": {
                 "a": "<img src=\"./images/posttesteq9.svg\">",
                 "b": "<img src=\"./images/posttesteq10.svg\">",
@@ -47,7 +47,7 @@
             "difficulty": "intermediate"
         },
         {
-            "question": "The system will be stable if :",
+            "question": "5. The system will be stable if :",
             "answers": {
                 "a": "All Zeros lies in left half of s plane.",
                 "b": "All Poles lies in Left half of s plane.",
